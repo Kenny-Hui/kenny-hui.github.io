@@ -47,7 +47,7 @@ window.onload = function() {
         }
 
         if(key == "3") {
-            window.location.href = "mailto:address@dmail.com";
+            window.location.href = "mailto:lx86@lx862.com";
         }
     }
 }
