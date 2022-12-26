@@ -275,8 +275,19 @@ a img {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 710px) {
+    #clock {
+        float: none;
+        text-align: center;
+    }
 
+    .nav {
+        text-align: center;
+    }
+
+    .container {
+        max-width: 97%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -284,17 +295,10 @@ a img {
         font-size: 32px;
     }
 
-    #clock {
-        float: none;
-        text-align: center;
-    }
-
-    .container {
-        max-width: 97%;
-    }
-
-    .nav {
-        text-align: center;
+    .navsep {
+        display: block;
+        visibility: hidden;
+        line-height: 8px;
     }
 
     .cakeday {
