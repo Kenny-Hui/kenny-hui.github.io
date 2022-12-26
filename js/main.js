@@ -1,8 +1,9 @@
 "use strict"
 
+runClock();
+setCopyrightYear();
+
 window.onload = function() {
-    runClock();
-    setCopyrightYear();
     setTimeout(checkSpecialDay, 750)
 }
 
