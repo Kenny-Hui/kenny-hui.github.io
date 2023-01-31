@@ -1,6 +1,9 @@
 :root {
-   --mainBgColor: rgba(255, 255, 255, 0.8);
-   --hoverBgColor: rgba(160, 160, 160, 0.35);
+   --mainBgColor: rgba(255, 255, 255, 0.75);
+   --hoverBgColor: rgba(150, 150, 150, 0.35);
+   --linkColor: #0B3872;
+   --text-color: #000;
+   --borderColor: #FFF;
 }
 
 @keyframes slideFromBottom {
@@ -30,21 +33,30 @@
     }
 }
 
-@keyframes scaleUp {
+@keyframes mouseUp {
     0% {
-        transform: scale(0.9);
+        transform: scale(0.95) perspective(500px) rotate3d(1, 0, 0, 10deg);
     }
     100% {
         transform: scale(1);
     }
 }
 
-@keyframes scaleDown {
+@keyframes mouseDown {
     0% {
         transform: scale(1);
     }
     100% {
-        transform: scale(0.9);
+        transform: scale(0.95) perspective(500px) rotate3d(1, 0, 0, 10deg);
+    }
+}
+
+@keyframes logo {
+    from {
+        clip-path: inset(0% 50% 0% 50%);
+    }
+    to {
+        clip-path: inset(0% 0% 0% 0%);
     }
 }
 
@@ -53,10 +65,16 @@ html, body {
     height: 100%;
     font-family: 'Jost', 'Segoe UI', "Arial", sans-serif;
     line-height: 1.5;
+    color: var(--text-color);
+}
+
+b {
+    font-weight: 600;
 }
 
 a {
-    color: #0B3872;
+    position: relative;
+    color: var(--linkColor);
     text-decoration: none;
 }
 
@@ -66,6 +84,7 @@ a:hover {
 
 a img {
     border: none;
+    background-color: transparent;
 }
 
 #clock {
@@ -112,7 +131,7 @@ a img {
     user-select: none;
 	overflow: hidden;
 	position: fixed;
-    background: url("../img/bg.jpg");
+    background-image: url("../img/bg.jpg");
     background-size: cover;
     z-index: -2;
 }
@@ -127,13 +146,15 @@ a img {
     text-align: left;
     list-style-type: none;
     margin: 0 auto;
-    padding: 10px;
+    padding: 8px;
     width: 100%;
     font-size: 22px;
-    border-radius: 18px;
+    border-radius: 14px;
     box-shadow: 2px 2px 16px #333;
     background: #ffffff;
     background: var(--mainBgColor);
+    border: 1px solid var(--borderColor);
+    outline: 1px solid black;
     box-sizing: border-box;
 }
 
@@ -143,49 +164,43 @@ a img {
 
 .navitem {
     display: inline-block;
-    border-radius: 10px;
-}
-
-.navitem:hover {
-    background: #ddd;
-    background: var(--hoverBgColor);
+    border-radius: 8px;
 }
 
 .project:hover {
-    background: #ddd;
     background: var(--hoverBgColor);
 }
 
 .navitem a {
     display: block;
     text-align: center;
-    text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 
-.project_container {
-    margin: 20px 0px;
+.project-container {
+    margin: 20px auto;
+    display: table;
 }
 
 .project {
-    border-radius: 25px;
-    max-width: 300px;
-    margin: 0 15px;
-    padding: 15px;
     display: inline-block;
+    display: table-cell;
+    border-radius: 25px;
+    width: 300px;
+    padding: 15px;
     vertical-align: top;
 }
 
-.project_img {
+.project-img {
     width: 50%;
     border-radius: 25px;
 }
 
-.inline_showcase {
+.inline-icons {
     padding: 10px 0;
 }
 
-.inline_showcase img {
+.inline-icons img {
     margin: 0 5px;
     width: 48px;
 }
@@ -195,26 +210,21 @@ a img {
     width: 100%;
     margin: 20px 0;
     padding: 15px 10px;
-    box-shadow: 2px 2px 16px #333;
-    background: #ffffff;
-    background: var(--mainBgColor);
-    border-radius: 18px;
+    box-shadow: 2px 2px 14px #111;
+    background-color: #ffffff;
+    background-color: var(--mainBgColor);
+    border: 1px solid var(--borderColor);
+    outline: 1px solid black;
+    border-radius: 14px;
     box-sizing: border-box;
 }
 
-.floatingcontainer:hover{
-    background-color: #EEE;
-}
-
 .tag {
+    background-color: green;
     font-size: 16px;
     width: max-content;
     padding: 0px 15px;
     border-radius: 100px;
-}
-
-.bg-green {
-    background-color: green;
 }
 
 .logo {
@@ -276,6 +286,10 @@ a img {
     .container {
         max-width: 97%;
     }
+
+    .project {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -294,13 +308,58 @@ a img {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #EEE;
+        --mainBgColor: rgba(30, 30, 40, 0.75);
+        --linkColor: #55AADD;
+        --hoverBgColor: rgba(80, 80, 90, 0.65);
+        --borderColor: #556;
+    }
+
+    .bg {
+        background-image: url("../img/bg_night.jpg");
+    }
+}
+
 @media (prefers-reduced-motion: no-preference) {
     html, body {
         scroll-behavior: smooth;
     }
 
-    .navitem, .project, .floatingcontainer {
+    .logo {
+        animation: 0.5s slideFromBottom, logo 0.5s;
+        animation-iteration-count: 1;
+    }
+
+    .navitem, .project, .floatingcontainer, a::before {
         transition: 0.2s;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 2px;
+        border-radius: 6px;
+        overflow: hidden;
+        left: 50%;
+        bottom: 0;
+        transition: .2s;
+        background-color: var(--linkColor);
+    }
+
+    a:hover, a:hover:before {
+        text-decoration: none;
+    }
+
+    a:hover:before {
+        left: 0%;
+        width: 100%;
     }
 
     .special_msg {
@@ -311,20 +370,15 @@ a img {
         animation: slideFromBottom 0.6s, fadeIn 0.6s;
     }
 
-    .logo {
-        animation: slideFromBottom 0.5s, fadeIn 0.5s;
-        animation-iteration-count: 1;
-    }
-
     .project:hover {
         transform: translateY(-6px);
     }
 
     .clickable {
-        animation: scaleUp 0.2s forwards;
+        animation: mouseUp 0.2s forwards;
     }
     
     .clickable:active {
-        animation: scaleDown 0.2s forwards;
+        animation: mouseDown 0.2s forwards;
     }
 }

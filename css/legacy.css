@@ -55,10 +55,10 @@ body {
     _margin: 2px;
     _display: inline;
     _text-align: center;
+    _cursor: default;
 }
 
 .navitem a:hover {
-    _cursor: default;
     _margin: 0px;
     _border: 2px outset #fff;
     _text-decoration: none;
