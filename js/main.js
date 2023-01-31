@@ -1,7 +1,6 @@
 "use strict"
 
 runClock();
-setCopyrightYear();
 
 window.onload = function() {
     setTimeout(checkSpecialDay, 750)
@@ -27,13 +26,6 @@ function checkSpecialDay() {
         // Christmas
         var element = document.getElementById("christmas");
         element.style.display = 'block';
-    }
-}
-
-function setCopyrightYear() {
-    var element = document.getElementById("copy-year");
-    if(element != null) {
-        element.innerHTML = new Date().getFullYear().toString();
     }
 }
 
