@@ -1,18 +1,7 @@
 window.onload = function() {
     var input = document.getElementById("input");
-    var cursor = document.getElementById("cursor");
-    var workDone = false;
-
-    setInterval(function() {
-        if(cursor.style.display == 'none') {
-            cursor.style.display = ''
-        } else {
-            cursor.style.display = 'none'
-        }
-    }, 250);
 
     document.onkeypress = function(e) {
-        if(workDone) return;
         e = e || window.event;
         var keycode = e.keyCode || e.which;
 
@@ -30,13 +19,8 @@ window.onload = function() {
     };
 
     function doWork(message, key) {
-        workDone = true;
-        var resultHTML = message + '<span id="cursor">_</span>';
-        var resultElement = document.getElementById("result");
-        input.innerHTML = key;
-        cursor.parentNode.removeChild(cursor);
-        resultElement.innerHTML = resultHTML;
-        cursor = document.getElementById("cursor");
+        input.innerHTML += key;
+        input.innerHTML += "<br>" + message;
 
         if(key === "1") {
             window.location.href = "http://" + window.location.host + "/index.html";

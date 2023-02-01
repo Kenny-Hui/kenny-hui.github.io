@@ -20,12 +20,23 @@
                 font-display: fallback;
             }
 
+            @keyframes blink {
+                50% {
+                    opacity: 0;
+                }
+            }
+
             body {
                 font-size: 16px;
                 color: #AAA;
                 font-family: 'Mx437_IBM_VGA_8x16', 'MS Sans Serif';
                 background-color: #000000;
                 line-height: 1.25;
+            }
+
+            #input::after {
+                content: "_";
+                animation: 0.5s blink step-start infinite;
             }
         </style>
     </head>
@@ -36,7 +47,7 @@
         <p>&nbsp;&nbsp; 2) You typed the wrong URL Address</p>
         <p>&nbsp;</p>
         <p>Return to Home Page [1]&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Try your luck on Wayback Machine [2]&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Contact Site Owner [3]</p>
-        <p>> <span id="input"></span><span id="cursor">_</span></p>
+        <p>> <span id="input"></span></p>
         <p id="result"></p>
     </body>
 </html>
