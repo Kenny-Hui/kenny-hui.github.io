@@ -1,0 +1,157 @@
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes slideFromBottom {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 20%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    @keyframes mouseUp {
+        0% {
+            transform: scale(0.95) perspective(500px) rotate3d(1, 0, 0, 10deg);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes mouseDown {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0.95) perspective(500px) rotate3d(1, 0, 0, 10deg);
+        }
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: translateY(0)
+        }
+        5% {
+            transform: translateY(-25%)
+        }
+        10% {
+            transform: translateY(0)
+        }
+    }
+
+    @keyframes logo {
+        0% {
+            left: 0;
+            width: 0%;
+        }
+        9% {
+            left: 50%;
+            width: 50%;
+        }
+        15% {
+            left: 100%;
+            width: 0%;
+        }
+    }
+
+    html, body {
+        scroll-behavior: smooth;
+    }
+
+    .navitem, .project, .floatingcontainer, a::before {
+        transition: 0.2s;
+    }
+
+    a {
+        text-decoration: none;
+        background: linear-gradient(var(--link-color), var(--link-color)) left bottom no-repeat;
+        background-position: 50% 100%;
+        background-size: 0% 2px;
+        transition: 0.2s;
+    }
+
+    a:hover {
+        background-size: 100% 2px;
+        text-decoration: none;
+    }
+
+    .special_msg {
+        animation: slideFromBottom 0.6s forwards;
+    }
+
+    .logo, .nav, .floatingcontainer {
+        animation: slideFromBottom 0.6s, fadeIn 0.6s;
+    }
+
+    .project-container:has(.project:hover) .project:not(:hover) {
+        opacity: 0.5;
+    }
+
+    .project:hover {
+        transform: translateY(-6px);
+    }
+
+    .clickable {
+        animation: mouseUp 0.2s forwards;
+    }
+    
+    .clickable:active {
+        animation: mouseDown 0.2s forwards;
+    }
+    
+    .logo > span {
+        transition: 0.2s;
+        animation: 4s bounce infinite;
+    }
+
+    .logo:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 14px;
+        width: 0;
+        height: 4px;
+        animation: 4s logo linear infinite;
+        background: linear-gradient(to right, transparent, #FFF);
+    }
+    
+    .logo > span:nth-child(2) {
+        animation-delay: 0.05s;
+    }
+    
+    .logo > span:nth-child(3) {
+        animation-delay: 0.10s;
+    }
+    
+    .logo > span:nth-child(4) {
+        animation-delay: 0.15s;
+    }
+    
+    .logo > span:nth-child(5) {
+        animation-delay: 0.20s;
+    }
+    
+    .logo > span:nth-child(6) {
+        animation-delay: 0.25s;
+    }
+    
+    .logo > span:nth-child(7) {
+        animation-delay: 0.30s;
+    }
+    
+    .logo > span:nth-child(8) {
+        animation-delay: 0.35s;
+    }
+    
+    .logo > span:nth-child(9) {
+        animation-delay: 0.40s;
+    }
+}

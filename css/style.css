@@ -1,63 +1,9 @@
 :root {
    --mainBgColor: rgba(255, 255, 255, 0.75);
    --hoverBgColor: rgba(150, 150, 150, 0.35);
-   --linkColor: #0B3872;
+   --link-color: #0B3872;
    --text-color: #000;
-   --borderColor: #FFF;
-}
-
-@keyframes slideFromBottom {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 20%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-    }
-}
-
-@keyframes mouseUp {
-    0% {
-        transform: scale(0.95) perspective(500px) rotate3d(1, 0, 0, 10deg);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes mouseDown {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0.95) perspective(500px) rotate3d(1, 0, 0, 10deg);
-    }
-}
-
-@keyframes logo {
-    from {
-        clip-path: inset(0% 50% 0% 50%);
-    }
-    to {
-        clip-path: inset(0% 0% 0% 0%);
-    }
+   --border-color: #FFF;
 }
 
 html, body {
@@ -68,13 +14,13 @@ html, body {
     color: var(--text-color);
 }
 
-b {
+b, .header {
     font-weight: 600;
 }
 
 a {
     position: relative;
-    color: var(--linkColor);
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -91,7 +37,22 @@ a img {
     float: right;
 }
 
-.special_msg_container {
+.logo {
+    display: inline-block;
+    position: relative;
+    color: white;
+    margin: 20px 0;
+    margin-bottom: 35px;
+    font-size: 84px;
+    text-shadow: 0px 0px 10px var(--text-color);
+}
+
+.logo > span {
+    display: inline-block;
+    margin: 0 -1px;
+}
+
+.special-msg-container {
     position: absolute;
     top: -74px;
     vertical-align: middle;
@@ -99,26 +60,26 @@ a img {
     overflow: hidden;
 }
 
-.special_msg {
+.special-msg {
     font-size: 20px;
     line-height: 1;
     text-align: left;
     display: none;
 }
 
-.special_msg img {
+.special-msg img {
     vertical-align: middle;
     width: 64px;
 }
 
-.special_msg td {
+.special-msg td {
     color: white;
     padding: 0 10px;
+    vertical-align: middle;
 }
 
 .header {
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 2em;
     margin: 10px 0;
 }
 
@@ -140,6 +101,7 @@ a img {
     font-size: 20px;
     max-width: 70%;
     margin: 0 auto;
+    transition: max-width 0.2s;
 }
 
 .nav {
@@ -153,7 +115,7 @@ a img {
     box-shadow: 2px 2px 16px #333;
     background: #ffffff;
     background: var(--mainBgColor);
-    border: 1px solid var(--borderColor);
+    border: 1px solid var(--border-color);
     outline: 1px solid black;
     box-sizing: border-box;
 }
@@ -177,6 +139,8 @@ a img {
     color: var(--text-color);
 }
 
+/* Thinking whether I should just wrap this inside another horizontal overflowable container */
+
 .project-container {
     margin: 20px auto;
     display: table;
@@ -185,8 +149,10 @@ a img {
 .project {
     display: inline-block;
     display: table-cell;
+    table-layout: fixed;
+    word-wrap: break-word;
     border-radius: 25px;
-    width: 300px;
+    max-width: 300px;
     padding: 15px;
     vertical-align: top;
 }
@@ -213,7 +179,7 @@ a img {
     box-shadow: 2px 2px 14px #111;
     background-color: #ffffff;
     background-color: var(--mainBgColor);
-    border: 1px solid var(--borderColor);
+    border: 1px solid var(--border-color);
     outline: 1px solid black;
     border-radius: 14px;
     box-sizing: border-box;
@@ -225,12 +191,6 @@ a img {
     width: max-content;
     padding: 0px 15px;
     border-radius: 100px;
-}
-
-.logo {
-    margin: 40px 0;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .oldbadge {
@@ -261,22 +221,30 @@ a img {
     position: relative;
 }
 
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: 1450px) {
   .container {
-    max-width: 80%;
+    max-width: 85%;
   }
 }
 
-@media screen and (max-width: 1440px) {
-  .container {
-    max-width: 90%;
-  }
-}
+@media screen and (max-width: 1000px) {
+    .container {
+      max-width: 90%;
+    }
 
-@media screen and (max-width: 710px) {
+    .project {
+        display: inline-block;
+    }
+  }
+
+@media screen and (max-width: 800px) {
     #clock {
         float: none;
         text-align: center;
+    }
+
+    .logo {
+        font-size: 72px;
     }
 
     .nav {
@@ -297,13 +265,18 @@ a img {
         font-size: 32px;
     }
 
+    .logo {
+        margin-bottom: 50px;
+        font-size: 60px;
+    }
+
     .navsep {
         display: block;
         visibility: hidden;
         line-height: 8px;
     }
 
-    .cakeday {
+    .special-msg {
         font-size: 18px;
     }
 }
@@ -312,73 +285,12 @@ a img {
     :root {
         --text-color: #EEE;
         --mainBgColor: rgba(30, 30, 40, 0.75);
-        --linkColor: #55AADD;
+        --link-color: #55AADD;
+        --border-color: #556;
         --hoverBgColor: rgba(80, 80, 90, 0.65);
-        --borderColor: #556;
     }
 
     .bg {
         background-image: url("../img/bg_night.jpg");
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    html, body {
-        scroll-behavior: smooth;
-    }
-
-    .logo {
-        animation: 0.5s slideFromBottom, logo 0.5s;
-        animation-iteration-count: 1;
-    }
-
-    .navitem, .project, .floatingcontainer, a::before {
-        transition: 0.2s;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    a::before {
-        position: absolute;
-        content: "";
-        width: 0%;
-        height: 2px;
-        border-radius: 6px;
-        overflow: hidden;
-        left: 50%;
-        bottom: 0;
-        transition: .2s;
-        background-color: var(--linkColor);
-    }
-
-    a:hover, a:hover:before {
-        text-decoration: none;
-    }
-
-    a:hover:before {
-        left: 0%;
-        width: 100%;
-    }
-
-    .special_msg {
-        animation: slideFromBottom 0.6s forwards;
-    }
-
-    .nav, .floatingcontainer {
-        animation: slideFromBottom 0.6s, fadeIn 0.6s;
-    }
-
-    .project:hover {
-        transform: translateY(-6px);
-    }
-
-    .clickable {
-        animation: mouseUp 0.2s forwards;
-    }
-    
-    .clickable:active {
-        animation: mouseDown 0.2s forwards;
     }
 }

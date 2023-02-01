@@ -13,6 +13,7 @@
     <meta name="theme-color" content="#00AAAA">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
     <!--[if IE]>
         <link type="text/css" rel="stylesheet" href="css/legacy.css">
     <![endif]-->
@@ -24,42 +25,46 @@
 <body>
     <div class="bg"></div>
     <div class="container">
-        <div class="top_container center">
-            <img src="img/logo.png" class="logo" alt="Kenny Hui">
+        <div class="center">
+            <div class="logo">
+                <span>K</span><span>e</span><span>n</span><span>n</span><span>y</span><span>&nbsp;</span><span>H</span><span>u</span><span>i</span>
+            </div>
+
+            <!-- Special -->
             <ul class="nav">
-                <div class="special_msg_wrapper relative">
-                    <div class="special_msg_container">
-                        <div class="special_msg" id="cakeday">
-                            <table>
-                                <tr>
-                                    <td><img alt="Blobfox icon: Blobfox lurk owo" src="img/blobfox/revblobfoxlurkowo.png"></td>
-                                    <td>Heard someone is having their birthday today...</td>
-                                </tr>
-                            </table>
+                <div class="relative">
+                    <div class="special-msg-container">
+                        <div class="special-msg" id="cakeday">
+                            <table><tr>
+                                <td><img alt="Blobfox icon: Blobfox lurk owo" src="img/blobfox/revblobfoxlurkowo.png"></td>
+                                <td>Heard someone is having their birthday today...</td>
+                            </tr></table>
                         </div>
-                        <div class="special_msg" id="christmas">
-                            <table>
-                                <tr>
-                                    <td><img alt="Blobfox icon: Blobfox Santa" src="img/blobfox/revblobfoxsanta.png"></td>
-                                    <td>Merry Christmas!</td>
-                                </tr>
-                            </table>
+                        <div class="special-msg" id="christmas">
+                            <table><tr>
+                                <td><img alt="Blobfox icon: Blobfox Santa" src="img/blobfox/revblobfoxsanta.png"></td>
+                                <td>Merry Christmas!</td>
+                            </tr></table>
                         </div>
                     </div>
                 </div>
+
+                <!-- Navbar -->
                 <li class="navitem"><a class="clickable" href="#intro">About</a></li>
                 <li class="navitem"><a class="clickable" href="#projects">Projects</a></li>
                 <li class="navitem"><a class="clickable" href="#contacts">Contact</a></li>
 
                 <span class="navsep">|</span>
 
-                <li class="navitem"><a class="clickable" href="https://blog.lx862.com">Blog</a></li>
-                <li class="navitem"><a class="clickable" href="https://lx862.com/sticker-lab">Sticker Lab</a></li>
+                <li class="navitem"><a class="clickable" target="_blank" href="https://blog.lx862.com">Blog</a></li>
+                <li class="navitem"><a class="clickable" target="_blank" href="https://lx862.com/sticker-lab">Sticker Lab</a></li>
                 <li id="clock">&nbsp;</li>
             </ul>
         </div>
-        <div class="body_container">
 
+        <!-- HEADER END -->
+        
+        <div class="body-container">
             <!-- Intro -->
             <div id="intro" class="floatingcontainer center">
                 <h1 class="header">Hi there</h1>
@@ -89,7 +94,7 @@
                         <img class="project-img clickable" alt="DCLink Logo" src="img/project/dclink.png">
                         <h1 class="header">DCLink</h1>
                         <div class="inline-icons">
-                            <a href="https://github.com/Kenny-Hui/DCLink"><img class="clickable" alt="GitHub" src="./img/external/github.png"></a>
+                            <a target="_blank" href="https://github.com/Kenny-Hui/DCLink"><img class="clickable" alt="GitHub" src="./img/external/github.png"></a>
                         </div>
                         <p>A customizable Discord <-> Minecraft linking mod, with fully customizable embed messages and more.</p>
                     </div>
@@ -98,8 +103,8 @@
                         <img class="project-img clickable" alt="Better Tellraw Logo" src="img/project/bettertellraw.png">
                         <h1 class="header">Better Tellraw</h1>
                         <div class="inline-icons">
-                            <a href="https://github.com/Kenny-Hui/BetterTellraw"><img class="clickable" alt="GitHub" src="./img/external/github.png"></a>
-                            <a href="https://modrinth.com/mod/bettertellraw"><img class="clickable" alt="Modrinth" src="./img/external/modrinth.png"></a>
+                            <a target="_blank" href="https://github.com/Kenny-Hui/BetterTellraw"><img class="clickable" alt="GitHub" src="./img/external/github.png"></a>
+                            <a target="_blank" href="https://modrinth.com/mod/bettertellraw"><img class="clickable" alt="Modrinth" src="./img/external/modrinth.png"></a>
                         </div>
                         <p>Minecraft /tellraw command, but with placeholder variables and an identifier system, making it easy to reuse messages.</p>
                     </div>
@@ -108,7 +113,7 @@
                         <img class="project-img clickable" alt="obDRPC Image" src="img/project/obdrpc.png">
                         <h1 class="header">obDRPC</h1>
                         <div class="inline-icons">
-                            <a href="https://github.com/Kenny-Hui/obDRPC"><img class="clickable" alt="GitHub" src="./img/external/github.png"></a>
+                            <a target="_blank" href="https://github.com/Kenny-Hui/obDRPC"><img class="clickable" alt="GitHub" src="./img/external/github.png"></a>
                         </div>
                         <p>Formally known as OpenBVE Discord RPC, this allows users to display their presence via a OpenBVE Train Plugin.</p>
                     </div>
@@ -127,8 +132,8 @@
                         <img class="project-img clickable" alt="Command Prompt" src="img/project/splashfox.png">
                         <h1 class="header">SplashFox</h1>
                         <div class="inline-icons">
-                            <a href="https://github.com/Kenny-Hui/splashfox"><img alt="GitHub" src="./img/external/github.png"></a>
-                            <a href="https://modrinth.com/mod/splashfox"><img alt="Modrinth" src="./img/external/modrinth.png"></a>
+                            <a target="_blank" href="https://github.com/Kenny-Hui/splashfox"><img alt="GitHub" src="./img/external/github.png"></a>
+                            <a target="_blank" href="https://modrinth.com/mod/splashfox"><img alt="Modrinth" src="./img/external/modrinth.png"></a>
                         </div>
                         <p>A Fabric/Quilt-compatible mod that displays an bouncy blobfox on startup.</p>
                         <p>MC 1.17 - 1.19</p>
@@ -138,8 +143,8 @@
                         <img class="project-img clickable" alt="Command Prompt" src="img/project/mtrpids.png">
                         <h1 class="header">MTR PIDS Simulator</h1>
                         <div class="inline-icons">
-                            <a href="https://github.com/HKTSS/mtr-pids"><img alt="GitHub" src="./img/external/github.png"></a>
-                            <a href="https://hktss.github.io/mtr-pids"><img alt="Website" src="./img/external/internet.png"></a>
+                            <a target="_blank" href="https://github.com/HKTSS/mtr-pids"><img alt="GitHub" src="./img/external/github.png"></a>
+                            <a target="_blank" href="https://hktss.github.io/mtr-pids"><img alt="Website" src="./img/external/internet.png"></a>
                         </div>
                         <p>A Hong Kong MTR Passenger Information Display System Simulator</p>
                     </div>
@@ -148,8 +153,8 @@
                         <img class="project-img clickable" alt="Command Prompt" src="img/project/nlrt.png">
                         <h1 class="header">LRT PIDS Simulator</h1>
                         <div class="inline-icons">
-                            <a href="https://github.com/HKTSS/nlrt-pids"><img alt="GitHub" src="./img/external/github.png"></a>
-                            <a href="https://hktss.github.io/nlrt-pids"><img alt="Website" src="./img/external/internet.png"></a>
+                            <a target="_blank" href="https://github.com/HKTSS/nlrt-pids"><img alt="GitHub" src="./img/external/github.png"></a>
+                            <a target="_blank" href="https://hktss.github.io/nlrt-pids"><img alt="Website" src="./img/external/internet.png"></a>
                         </div>
                         <p>A Hong Kong Light Rail Passenger Information Display System Simulator</p>
                     </div>
