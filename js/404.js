@@ -1,37 +1,38 @@
-window.onload = function() {
-    var input = document.getElementById("input");
+var input = document.getElementById("input");
+var d1 = document.getElementById("d1");
 
-    document.onkeypress = function(e) {
-        e = e || window.event;
-        var keycode = e.keyCode || e.which;
+d1.removeAttribute("hidden");
 
-        if(keycode == 49) {
-            doWork("Redirecting to Home Page...", "1");
-        }
+document.onkeypress = function(e) {
+    e = e || window.event;
+    var keycode = e.keyCode || e.which;
 
-        if(keycode == 50) {
-            doWork("Redirecting to the Internet Archive...", "2")
-        }
+    if(keycode == 49) {
+        doWork("Redirecting to Home Page...", "1");
+    }
 
-        if(keycode == 51) {
-            doWork("Opening email, continue on your email client...", "3")
-        }
-    };
+    if(keycode == 50) {
+        doWork("Redirecting to the Internet Archive...", "2")
+    }
 
-    function doWork(message, key) {
-        input.innerHTML += key;
-        input.innerHTML += "<br>" + message;
+    if(keycode == 51) {
+        doWork("Opening email, continue on your email client...", "3")
+    }
+};
 
-        if(key === "1") {
-            window.location.href = "http://" + window.location.host + "/index.html";
-        }
+function doWork(message, key) {
+    input.innerHTML += key;
+    input.innerHTML += "<br>" + message;
 
-        if(key === "2") {
-            window.location.href = "https://web.archive.org/web/*/" + window.location.href;
-        }
+    if(key === "1") {
+        window.location.href = "http://" + window.location.host + "/index.html";
+    }
 
-        if(key == "3") {
-            window.location.href = "mailto:lx86@lx862.com";
-        }
+    if(key === "2") {
+        window.location.href = "https://web.archive.org/web/*/" + window.location.href;
+    }
+
+    if(key == "3") {
+        window.location.href = "mailto:lx86@lx862.com";
     }
 }

@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/reset.css">
-        <script type="text/javascript" src="/js/404.js"></script>
         <title>404 Not found</title>
 
         <style>
@@ -13,8 +12,7 @@
                 font-family: 'Mx437_IBM_VGA_8x16';
                 src: url('/fonts/Mx437_IBM_VGA_8x16.eot');
                 src: url('/fonts/Mx437_IBM_VGA_8x16.eot?#iefix') format('embedded-opentype'),
-                url('/fonts/Mx437_IBM_VGA_8x16.woff') format('woff'),
-                url('/fonts/Mx437_IBM_VGA_8x16.svg#Mx437_IGS_VGA_8x16') format('svg');
+                url('/fonts/Mx437_IBM_VGA_8x16.woff') format('woff');
                 font-weight: normal;
                 font-style: normal;
                 font-display: fallback;
@@ -28,10 +26,19 @@
 
             body {
                 font-size: 16px;
-                color: #AAA;
                 font-family: 'Mx437_IBM_VGA_8x16', 'MS Sans Serif';
                 background-color: #000000;
                 line-height: 1.25;
+            }
+
+            a {
+                color: #AAA;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #FFF;
+                text-decoration: underline;
             }
 
             #input::after {
@@ -40,14 +47,23 @@
             }
         </style>
     </head>
-    <body>
+    <body bgcolor="#000000" text="#AAAAAA" link="#FFFFFF">
         <p>404 Not found</p>
         <p>This could happen due to the following:</p>
         <p>&nbsp;&nbsp; 1) A page that has previously existed on this site, but is now removed for reasons.</p>
         <p>&nbsp;&nbsp; 2) You typed the wrong URL Address</p>
         <p>&nbsp;</p>
-        <p>Return to Home Page [1]&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Try your luck on Wayback Machine [2]&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Contact Site Owner [3]</p>
+        <!-- <p id="d1" hidden>Return to Home Page [1]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Try your luck on Wayback Machine [2]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Site Owner [3]</p> -->
+        <!-- <noscript> -->
+            <p>
+                <a accesskey="q" href="index.html">Return to Home Page [Alt-Q]</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a accesskey="g" href="https://web.archive.org/web/*/lx862.com">Try your luck on Wayback Machine [Alt-G]</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a accesskey="s" href="mailto:lx86@lx862.com">Contact Site Owner [Alt-S]</a>
+            </p>
+        <!-- </noscript> -->
         <p>> <span id="input"></span></p>
-        <p id="result"></p>
+        <!-- <script type="text/javascript" src="/js/404.js"></script> -->
     </body>
 </html>

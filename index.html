@@ -5,217 +5,400 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="LX86">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Kenny Hui" />
+    <meta name="description" content="LX86's Personal site">
+    <meta property="og:site_name" content="Kenny Hui"/>
+    <meta property="og:title" content="LX86's Personal site" />
     <meta property="og:type" content="yes." />
-    <meta property="og:url" content="http://kenny-hui.github.io" />
+    <meta property="og:url" content="https://lx862.com" />
     <meta property="og:image" content="img/embed.jpg" />
     <meta property="og:description" content="" />
-    <meta name="theme-color" content="#00AAAA">
+    <meta name="theme-color" content="#800773">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
     <!--[if IE]>
-        <link type="text/css" rel="stylesheet" href="css/legacy.css">
+        <link type="text/css" rel="stylesheet" href="css/ie.css">
     <![endif]-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap" rel="stylesheet">
     <title>Kenny Hui</title>
 </head>
 <body>
-    <div class="bg"></div>
+    <a class="skip-to-content" href="#intro">Skip to content</a>
+    <a href="#" aria-label="Back to top" class="back-to-top"></a>
+    <div class="bg">
+        <div class="bgcircle"></div>
+        <div class="bgcircle"></div>
+        <div class="bgcircle"></div>
+        <div class="bgcircle"></div>
+    </div>
     <div class="container">
-        <div class="center">
-            <div class="logo">
+        <div id="header" class="header">
+            <h1 class="logo">
                 <span>K</span><span>e</span><span>n</span><span>n</span><span>y</span><span>&nbsp;</span><span>H</span><span>u</span><span>i</span>
-            </div>
-
+            </h1>
             <!-- Special -->
-            <ul class="nav">
-                <div class="relative">
-                    <div class="special-msg-container">
-                        <div class="special-msg" id="cakeday">
-                            <table><tr>
-                                <td><img alt="Blobfox icon: Blobfox lurk owo" src="img/blobfox/revblobfoxlurkowo.png"></td>
-                                <td>Heard someone is having their birthday today...</td>
-                            </tr></table>
-                        </div>
-                        <div class="special-msg" id="christmas">
-                            <table><tr>
-                                <td><img alt="Blobfox icon: Blobfox Santa" src="img/blobfox/revblobfoxsanta.png"></td>
-                                <td>Merry Christmas!</td>
-                            </tr></table>
-                        </div>
+            <div class="special-msg-wrapper">
+                <div class="special-msg-container">
+                    <div class="special-msg">
+                        <p><img alt="Blobfox cofe" loading="lazy" src="img/blobfox/blobfoxcofe.png">
+                            Yet Another Unproductive Day (YAUD)
+                        </p>
                     </div>
-                </div>
-
-                <!-- Navbar -->
-                <li class="navitem"><a class="clickable" href="#intro">About</a></li>
-                <li class="navitem"><a class="clickable" href="#projects">Projects</a></li>
-                <li class="navitem"><a class="clickable" href="#contacts">Contact</a></li>
-
-                <span class="navsep">|</span>
-
-                <li class="navitem"><a class="clickable" target="_blank" href="https://blog.lx862.com">Blog</a></li>
-                <li class="navitem"><a class="clickable" target="_blank" href="https://lx862.com/sticker-lab">Sticker Lab</a></li>
-                <li id="clock">&nbsp;</li>
-            </ul>
-        </div>
-
-        <!-- HEADER END -->
-        
-        <div class="body-container">
-            <!-- Intro -->
-            <div id="intro" class="floatingcontainer center">
-                <h1 class="header">Hi there</h1>
-                <p>I am Kenny Hui (Better known as LX86), and well I sometimes code stuff!</p>
-                <p>A very average guy who knows a little bit of everything, but neither particularly well.</p>
-                <p>Pronouns: <b>He/Him</b>, GMT+8</p>
-                <br>
-                <p>Programming languages I am comfortable working with:</p>
-                <!-- This is a space-filling, otherwise useless section "demonstrating" me being able to code in different syntax -->
-                <!-- Gimme time to learn like idk svelte or something -->
-                <div class="inline-icons center">
-                    <img class="clickable" title="HTML5" alt="HTML5" src="./img/external/html5.png">
-                    <img class="clickable" title="CSS" alt="CSS" src="./img/external/css.png">
-                    <img class="clickable" title="Javascript" alt="Javascript" src="./img/external/js.png">
-                    <img class="clickable" title="C#" alt="C#" src="./img/external/csharp.png">
-                    <img class="clickable" title="Java" alt="Java" src="./img/external/java.png">
-                </div>
-            </div>
-            
-            <!-- Projects -->
-            <div id="projects" class="floatingcontainer">
-                <h1 class="header center">Projects</h1>
-                <p class="center">Here are the project I have been working so far:</p>
-                <div class="project-container center">
-                    <!-- Projects DCLink -->
-                    <div class="project center">
-                        <img class="project-img clickable" alt="DCLink Logo" src="img/project/dclink.png">
-                        <h1 class="header">DCLink</h1>
-                        <div class="inline-icons">
-                            <a target="_blank" href="https://github.com/Kenny-Hui/DCLink"><img class="clickable" alt="GitHub" src="./img/external/github.png"></a>
-                        </div>
-                        <p>A customizable Discord <-> Minecraft linking mod, with fully customizable embed messages and more.</p>
+                    <div class="special-msg">
+                        <p><img alt="Blobfox Snuggle" loading="lazy" src="img/blobfox/blobfoxsnuggle.png">
+                            Stance Hard, Soft heart (≧▽≦)
+                        </p>
                     </div>
-                    <!-- Projects Better Tellraw -->
-                    <div class="project center">
-                        <img class="project-img clickable" alt="Better Tellraw Logo" src="img/project/bettertellraw.png">
-                        <h1 class="header">Better Tellraw</h1>
-                        <div class="inline-icons">
-                            <a target="_blank" href="https://github.com/Kenny-Hui/BetterTellraw"><img class="clickable" alt="GitHub" src="./img/external/github.png"></a>
-                            <a target="_blank" href="https://modrinth.com/mod/bettertellraw"><img class="clickable" alt="Modrinth" src="./img/external/modrinth.png"></a>
-                        </div>
-                        <p>Minecraft /tellraw command, but with placeholder variables and an identifier system, making it easy to reuse messages.</p>
+                    <div class="special-msg">
+                        <p><img alt="Blobfox Astronout" loading="lazy" src="img/blobfox/blobfoxastronout.png">
+                            Instead of fixing our planet, let's find another planet!
+                        </p>
                     </div>
-                    <!-- Projects obDRPC -->
-                    <div class="project center">
-                        <img class="project-img clickable" alt="obDRPC Image" src="img/project/obdrpc.png">
-                        <h1 class="header">obDRPC</h1>
-                        <div class="inline-icons">
-                            <a target="_blank" href="https://github.com/Kenny-Hui/obDRPC"><img class="clickable" alt="GitHub" src="./img/external/github.png"></a>
-                        </div>
-                        <p>Formally known as OpenBVE Discord RPC, this allows users to display their presence via a OpenBVE Train Plugin.</p>
+                    <div class="special-msg">
+                        <p><img alt="Blobfox Water" loading="lazy" src="img/blobfox/blobfoxwater.png">
+                            Forget Soft Drink, every heard of Cold Water?
+                        </p>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Side Projects -->
-            <div class="floatingcontainer">
-                <h1 class="header center">Side/Finished Project</h1>
-                <p class="center">These projects are current not in active development.</p>
-                <p class="center">Does not make it any less awesome however :D</p>
-
-                <div class="project-container center">
-                    <!-- Side Projects SplashFox -->
-                    <div class="project center">
-                        <img class="project-img clickable" alt="Command Prompt" src="img/project/splashfox.png">
-                        <h1 class="header">SplashFox</h1>
-                        <div class="inline-icons">
-                            <a target="_blank" href="https://github.com/Kenny-Hui/splashfox"><img alt="GitHub" src="./img/external/github.png"></a>
-                            <a target="_blank" href="https://modrinth.com/mod/splashfox"><img alt="Modrinth" src="./img/external/modrinth.png"></a>
-                        </div>
-                        <p>A Fabric/Quilt-compatible mod that displays an bouncy blobfox on startup.</p>
-                        <p>MC 1.17 - 1.19</p>
+                    <div class="special-msg">
+                        <p><img alt="Blobfox Peek" loading="lazy" src="img/blobfox/blobfoxpeek.png">
+                            Wanna try this on IE5?
+                        </p>
                     </div>
-                    <!-- Side Projects MTR PIDS -->
-                    <div class="project center">
-                        <img class="project-img clickable" alt="Command Prompt" src="img/project/mtrpids.png">
-                        <h1 class="header">MTR PIDS Simulator</h1>
-                        <div class="inline-icons">
-                            <a target="_blank" href="https://github.com/HKTSS/mtr-pids"><img alt="GitHub" src="./img/external/github.png"></a>
-                            <a target="_blank" href="https://hktss.github.io/mtr-pids"><img alt="Website" src="./img/external/internet.png"></a>
-                        </div>
-                        <p>A Hong Kong MTR Passenger Information Display System Simulator</p>
+                    <div class="special-msg">
+                        <p><img alt="Blobfox Santa" loading="lazy" src="img/blobfox/blobfoxheart.png">
+                            Let's be friends instead of fighting, okay?
+                        </p>
                     </div>
-                    <!-- Side Projects MTR LRT PIDS -->
-                    <div class="project center">
-                        <img class="project-img clickable" alt="Command Prompt" src="img/project/nlrt.png">
-                        <h1 class="header">LRT PIDS Simulator</h1>
-                        <div class="inline-icons">
-                            <a target="_blank" href="https://github.com/HKTSS/nlrt-pids"><img alt="GitHub" src="./img/external/github.png"></a>
-                            <a target="_blank" href="https://hktss.github.io/nlrt-pids"><img alt="Website" src="./img/external/internet.png"></a>
-                        </div>
-                        <p>A Hong Kong Light Rail Passenger Information Display System Simulator</p>
+                    <div class="special-msg">
+                        <p><img alt="Blobfox camera" loading="lazy" src="img/blobfox/blobfoxcamera.png">
+                            3.. 2.. 1...... How do I use this thing?
+                        </p>
                     </div>
-                </div>
-            </div>
-
-            <!-- Contacts -->
-            <div id="contacts" class="floatingcontainer">
-                <h1 class="header center">Contacts</h1>
-                <div class="project-container center">
-                    <div class="project center">
-                        <img class="project-img clickable" alt="DCLink Logo" src="img/contact/discord.png">
-                        <h1 class="header">Discord</h1>
-                        <span class="tag white">Preferred</span>
-                        <p>LX86#2271</p>
+                    <div class="special-msg">
+                        <p><img alt="Blobfox Shocked" loading="lazy" src="img/blobfox/blobfoxshocked.png">
+                            Not the bugs!
+                        </p>
                     </div>
-                    <div class="project center">
-                        <img class="project-img clickable" alt="Better Tellraw Logo" src="img/contact/telegram.png">
-                        <h1 class="header">Telegram</h1>
-                        <p>@LX862</p>
-                    </div>
-                    <div class="project center">
-                        <img class="project-img clickable" alt="Mastodon Logo" src="img/contact/mastodon.png">
-                        <h1 class="header">Mastodon</h1>
-                        <a rel="me" href="https://wetdry.world/@LX862" target="_blank">@LX862@wetdry.world</a>
-                    </div>
-                    <div class="project center">
-                        <img class="project-img clickable" alt="Email Logo" src="img/contact/mail.png">
-                        <h1 class="header">Email</h1>
-                        <p>The most reliable method :P</p>
-                        <!-- By default word break will not split email addresses (or anything that's a long string), this causes overflow on thinner mobile device -->
-                        <!-- <wbr> allows the line to be wrapped on that position -->
-                        <a href="mailto:lx86@lx862.com">lx86@<wbr>lx862.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="floatingcontainer center">
-                <h1 class="header">Credits</h1>
-                <p><a href="http://css3pie.com/about/" target="_blank">PIE - Adds several CSS3 features for older versions of Internet Explorer</a></p>
-                <p><a href="https://www.reddit.com/r/blobfox" target="_blank">Blobfox Project - Some emotes are used and displayed conditionally</a></p>
-                <p><a href="https://int10h.org/oldschool-pc-fonts/" target="_blank">Oldschool PC Fonts - Some font are used on the 404 page</a></p>
-                <p><a href="https://pages.github.com/" target="_blank">Github Pages - For actually hosting the site</a></p>
-                
-                <div class="footer">
-                    <p>LX86 2023</p>
-                    <div class="oldbadge">
-                        <p>
-                            <a href="//theoldnet.com/#frombadge" title="Are you tired of this new Internet yet? Time to Get TheOldNet!">
-                                <img src="//theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31" border=0>
-                            </a>
-                            <a href="//theoldnet.com/get?decode=false&scripts=false&timestamp=19991011153542&url=http://www.geocities.com/"><img src="img/wm/gc_icon.gif"></a>
-                            <a><img src="img/wm/blacksun_icon2.gif"></a>
-                            <img src="img/wm/valid-css.gif">
+                    <div class="special-msg">
+                        <p><img alt="Blobfox floof reach" loading="lazy" src="img/blobfox/blobfoxfloofreach.png">
+                            You fluffy?
                         </p>
                     </div>
                 </div>
             </div>
+
+            <!-- Navbar -->
+            <ul class="nav relative">
+                <li class="navitem"><a class="clickable" href="#intro">About</a></li>
+                <li class="navitem"><a class="clickable" href="#projects">Projects</a></li>
+                <li class="navitem"><a class="clickable" href="#contacts">Contact</a></li>
+                <li class="navsep" aria-label="Separator">|</li>
+                <li class="navitem"><a class="clickable" href="//blog.lx862.com">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- HEADER END -->
+        <div class="main">
+            <!-- Intro -->
+            <div id="intro" class="section center">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img alt="LX86 Logo" src="img/pfp.png">
+                    </div>
+                    <div class="profile-detail">
+                        <h1><a name="intro">Hi there</a></h1>
+                        <p>I am Kenny Hui (Better known as LX86). I sometimes code stuff, whether you like it or not.</p>
+                        <p>I like and hate technologies, and I am not a fan of mainstream social media.</p>
+                        <br>
+                        <p>Pronouns: <b>He/Him</b>, GMT+8</p>
+                        <p>Technologies I am comfortable working with:</p>
+                        <!-- This is a space-filling, otherwise useless section "demonstrating" me being able to code in different syntax -->
+                        <!-- Gimme time to learn like idk svelte or something -->
+                        <div class="inline-icons">
+                            <img class="clickable" title="HTML5" alt="HTML5" src="./img/external/html5.png">
+                            <img class="clickable" title="CSS" alt="CSS" src="./img/external/css.png">
+                            <img class="clickable" title="Javascript" alt="Javascript" src="./img/external/js.png">
+                            <img class="clickable" title="C#" alt="C#" src="./img/external/csharp.png">
+                            <img class="clickable" title="Java" alt="Java" src="./img/external/java.png">
+                        </div>
+                    </div>
+                </div>
+                <p>Have a nice day browsing through the internet!</p>
+            </div>
+            
+            <!-- Projects -->
+            <div id="projects" class="section center">
+                <h1 class="header"><a name="projects">Projects</a></h1>
+                <p>Here are the project I have been working so far:</p>
+                <!-- Projects List Start -->
+                <div class="project-container">
+                    <div class="project-group">
+                        <div class="project center">
+                            <div class="project-img">
+                                <img class="clickable" alt="DCLink Logo" decoding="async" src="img/project/dclink.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>DCLink</h1>
+                                <p>A customizable Discord <-> Minecraft linking mod, with fully customizable embed messages and more.</p>
+                                <div class="inline-icons">
+                                    <p>
+                                        <a target="_blank" href="//github.com/Kenny-Hui/DCLink"><img class="clickable" alt="Sources" src="./img/external/github.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-img">
+                                <img class="clickable" alt="Better Tellraw Logo" decoding="async" src="img/project/bettertellraw.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>Better Tellraw</h1>
+                                <p>Minecraft /tellraw command, but with placeholder variables and an identifier system, making it easy to reuse messages.</p>
+                                <div class="inline-icons">
+                                    <p>
+                                        <a target="_blank" href="//github.com/Kenny-Hui/BetterTellraw"><img class="clickable" alt="Sources" src="./img/external/github.png"></a>
+                                        <a target="_blank" href="//modrinth.com/mod/bettertellraw"><img class="clickable" alt="Modrinth" src="./img/external/modrinth.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-group">
+                        <div class="project">
+                            <div class="project-img">
+                                <img class="clickable" alt="SplashFox Logo" decoding="async" src="img/project/splashfox.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>SplashFox</h1>
+                                <p>A Fabric/Quilt-compatible mod that displays an bouncy blobfox on startup.</p>
+                                <p>MC 1.17 - 1.19</p>
+                                <div class="inline-icons">
+                                    <p>
+                                        <a target="_blank" href="//github.com/Kenny-Hui/splashfox"><img alt="Sources" src="./img/external/github.png"></a>
+                                        <a target="_blank" href="//modrinth.com/mod/splashfox"><img alt="Modrinth" src="./img/external/modrinth.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-img">
+                                <img class="clickable" alt="obDRPC Image" decoding="async" src="img/project/obdrpc.jpg">
+                            </div>
+                            <div class="project-detail">
+                                <h1>obDRPC</h1>
+                                <p>Formally known as OpenBVE Discord RPC, this allows users to display their presence via a OpenBVE Train Plugin.</p>
+                                <div class="inline-icons">
+                                    <p>
+                                        <a target="_blank" href="//github.com/Kenny-Hui/obDRPC"><img class="clickable" alt="Sources" src="./img/external/github.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section center">
+                <h1 class="header">Side/Finished Project</h1>
+                <p>These projects are not in active development/considered finished.</p>
+                <p>Does not make it any less awesome however :D</p>
+                <!-- Side Projects List Start -->
+                <div class="project-container">
+                    <div class="project-group">
+                        <div class="project">
+                            <div class="project-img">
+                                <img class="clickable" alt="Eat Every Word" decoding="async" src="img/project/eew.jpg">
+                            </div>
+                            <div class="project-detail">
+                                <h1>Eat Every Word</h1>
+                                <p>A mastodon bot that "eats" every word.</p>
+                                <p>New post every 3 hours</p>
+                                <div class="inline-icons">
+                                    <p>
+                                        <a target="_blank" href="//github.com/Kenny-Hui/EatEveryWord"><img alt="Sources" src="./img/external/github.png"></a>
+                                        <a target="_blank" href="//botsin.space/@EatEveryWord"><img alt="Mastodon" src="./img/contact/mastodon.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-img">
+                                <img class="clickable" alt="MTR PIDS Simulator" decoding="async" src="img/project/mtrpids.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>MTR PIDS Simulator</h1>
+                                <p>A Hong Kong MTR Passenger Information Display System Simulator</p>
+                                <div class="inline-icons">
+                                    <p>
+                                        <a target="_blank" href="//github.com/HKTSS/mtr-pids"><img alt="Sources" src="./img/external/github.png"></a>
+                                        <a target="_blank" href="//hktss.github.io/mtr-pids"><img alt="Website" src="./img/external/internet.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-group">
+                        <div class="project">
+                            <div class="project-img">
+                                <img class="clickable" alt="Sticker Lab" decoding="async" src="img/project/stl.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>Sticker Lab</h1>
+                                <p>A place where I draw public signage.</p>
+                                <p>(Mostly Metro related signage)</p>
+                                <div class="inline-icons">
+                                    <p>
+                                        <a target="_blank" href="//github.com/Kenny-Hui/sticker-lab"><img alt="Sources" src="./img/external/github.png"></a>
+                                        <a target="_blank" href="//lx862.com/sticker-lab"><img alt="Website" src="./img/external/internet.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="project">
+                            <div class="project-img">
+                                <img class="clickable" alt="Joban Client Mod" decoding="async" src="img/project/jcm.jpg">
+                            </div>
+                            <div class="project-detail">
+                                <h1>Joban Client Mod</h1>
+                                <p>An addon for the Minecraft Transit Railway Mod. Adding various blocks from the Hong Kong MTR that will improve your world.</p>
+                                <div class="inline-icons">
+                                    <p>
+                                        <a href="//modrinth.com/mod/jcm"><img alt="Modrinth" src="./img/external/modrinth.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="project">
+                            <div class="project-img">
+                                <img class="clickable" alt="LRT PIDS Simulator" decoding="async" src="img/project/nlrt.jpg">
+                            </div>
+                            <div class="project-detail">
+                                <h1>LRT PIDS Simulator</h1>
+                                <p>A Hong Kong Light Rail Passenger Information Display System Simulator</p>
+                                <div class="inline-icons">
+                                    <p>
+                                        <a target="_blank" href="//github.com/HKTSS/nlrt-pids"><img alt="Sources" src="./img/external/github.png"></a>
+                                        <a target="_blank" href="//hktss.github.io/nlrt-pids"><img alt="Website" src="./img/external/internet.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contacts -->
+            <div id="contacts" class="section">
+                <h1 class="header"><a name="contacts">Contacts</a></h1>
+                <div class="project-container">
+                    <div class="project-group">
+                        <div class="project center">
+                            <div class="project-img">
+                                <img class="clickable" alt="Discord" decoding="async" src="img/contact/discord.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>Discord</h1>
+                                <span class="tag">Preferred</span>
+                                <p>Let's have a quick chat</p>
+                                <p><a href="//discord.com/users/204071499135582208">LX86#2271</a></p>
+                            </div>
+                        </div>
+                        <div class="project center">
+                            <div class="project-img">
+                                <img class="clickable" alt="Email" decoding="async" src="img/contact/mail.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>Email</h1>
+                                <p>Wanna leave a message?</p>
+                                <p><a href="mailto:lx86@lx862.com">lx86@lx862.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-group">
+                        <div class="project center">
+                            <div class="project-img">
+                                <img class="clickable" alt="Fediverse" decoding="async" src="img/contact/mastodon.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>Fediverse</h1>
+                                <p>Follow what am I up to!</p>
+                                <p><a rel="me" href="//wetdry.world/@LX862" target="_blank">@LX862@wetdry.world</a></p>
+                            </div>
+                        </div>
+                        <div class="project center">
+                            <div class="project-img">
+                                <img class="clickable" alt="Telegram" decoding="async" src="img/contact/telegram.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>Telegram</h1>
+                                <p>Note: I am notably less active on Telegram.</p>
+                                <p>But for those who are more comfortable there:</p>
+                                <p><b>@LX862</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section center">
+                <h1 class="header">Credits</h1>
+                <div class="card-container">
+                    <a class="card" target="_blank" href="//volpeon.ink/projects/emojis/blobfox">
+                        <h2>Volpeon</h2>
+                        <p>Some blobfox emotes are used and displayed on this page</p>
+                    </a>
+                    <a class="card" target="_blank" href="//int10h.org/oldschool-pc-fonts/">
+                        <h2>Oldschool PC Fonts</h2>
+                        <p>Provide classic BIOS/system fonts, used on the 404 page</p>
+                    </a>
+                    <a class="card" target="_blank" href="//freeplay.codeberg.page/">
+                        <h2 class="nowrap">Free<span class="hover-spoiler">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>play</h2>
+                        <p>Creating a CSS-only site so good that I have to redesign this site. Also learnt some CSS tricks and a11y along the way.</p>
+                    </a>
+                    <a class="card" target="_blank" href="//pages.github.com">
+                        <h2>GitHub Pages</h2>
+                        <p>For hosting this page</p>
+                    </a>
+                </div>
+            </div>
+            <div class="section center">
+                <h1 class="header">Webrings</h1>
+                <div class="webring-container">
+                    <a href="//fediring.net/previous?host=lx862.com" aria-label="Fediring: Previous Member" class="arrow left">&#8249;</a>
+                    <a class="card webring-card" aria-label="Fediring Homepage" target="_blank" href="//fediring.net/">
+                        <h2>Fediring</h2>
+                        <p>A webring for members with a Fediverse account</p>
+                    </a>
+                    <a href="//fediring.net/next?host=lx862.com" aria-label="Fediring: Next Member" class="arrow right">&#8250;</a>
+                    <p><a class="random" href="//fediring.net/random" aria-label="Fediring: Random" class="arrow right">Random</a></p>
+                </div>
+                <div class="webring-container">
+                    <a href="//webring.dinhe.net/prev/https://lx862.com/" aria-label="Retronaut Webring: Previous Member" class="arrow left tooltip" data-tooltip="May contain unsolicited content, proceed with caution.">&#8249;</a>
+                    <a class="card webring-card" aria-label="Retronaut Webring Homepage" target="_blank" href="//webring.dinhe.net/">
+                        <h2>Retronaut</h2>
+                        <p>A webring. Explore other cool sites!</p>
+                    </a>
+                    <a href="//webring.dinhe.net/next/https://lx862.com/" aria-label="Retronaut Webring: Next Member" class="arrow right tooltip" data-tooltip="May contain unsolicited content, proceed with caution.">&#8250;</a>
+                    <p><a class="random" href="//webring.dinhe.net/random" aria-label="Retronaut Webring: Random" class="arrow right">Random</a></p>
+                </div>
+                <div class="webring-container">
+                    <a href="//hotlinewebring.club/lx86/previous" aria-label="Hotline Webring: Previous Member" class="arrow left tooltip" data-tooltip="May contain unsolicited content, proceed with caution.">&#8249;</a>
+                    <a class="card webring-card" aria-label="Hotline Webring Homepage" target="_blank" href="//hotlinewebring.club/">
+                        <h2>Hotline</h2>
+                        <p>A webring. Explore other cool personal site!</p>
+                    </a>
+                    <a href="//hotlinewebring.club/lx86/next" aria-label="Hotline Webring: Next Member" class="arrow right tooltip" data-tooltip="May contain unsolicited content, proceed with caution.">&#8250;</a>
+                </div>
+                <div class="footer">
+                    <p>LX86 2023</p>
+                    <p><i>Be whatever you want to be</i></p>
+                    <br>
+                    <p><a alt="Source code of this page" href="//github.com/Kenny-Hui/kenny-hui.github.io" target="_blank">The code of this page</a> are licensed under MIT<br>Other medium are licensed under CC BY 4.0</p>
+                </div>
+                <br>
+                <img alt="Viewable in any browser" src="./img/8831/allbrowser.gif">
+                <img alt="We do a little trolling" src="./img/8831/wdalt.png">
+                <img alt="W3C valid css" src="img/8831/valid-css.png">
+                <img alt="Keep the web free, say no to Web3" src="./img/8831/saynotoweb3.gif">
+            </div>
         </div>
     </div>
-
-
-    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

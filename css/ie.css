@@ -1,0 +1,87 @@
+body {
+    background: url("../img/fallback_bg.jpg");
+    _color: black;
+}
+
+.bg {
+    display: none;
+}
+
+.logo span {
+    color: #FFF;
+}
+
+.card:hover:after, .card:focus:after {
+    /* Width 100% crashes IE5 smh */
+    width: auto;
+}
+
+.nav {
+    _width: 80%;
+    _margin: 10px 0;
+    _padding: 10px;
+    _text-align: center;
+    _background: #C8C8C8;
+    _border-top: 2px solid #FFF;
+    _border-left: 2px solid #FFF;
+    _border-bottom: 2px solid #888;
+    _border-right: 2px solid #888;
+}
+
+.section {
+    /* _display: block; */
+    _width: 100%;
+    _padding: 20px;
+    _margin-top: 25px;
+    _margin-left: 10%;
+    _margin-right: 10%;
+    _background: #C8C8C8;
+    _border-top: 2px solid #FFF;
+    _border-left: 2px solid #FFF;
+    _border-bottom: 2px solid #888;
+    _border-right: 2px solid #888;
+}
+
+.special-msg-container {
+    _display: none;
+}
+
+.navitem {
+    _padding: 0px 7px;
+    _display: inline;
+}
+
+.navitem a {
+    _padding: 2px;
+    _margin: 2px;
+    _display: inline;
+    _cursor: default;
+    _text-decoration: none;
+}
+
+.navitem a:hover {
+    _margin: 0;
+    _border-top: 2px solid #fff;
+    _border-left: 2px solid #fff;
+    _border-bottom: 2px solid #444;
+    _border-right: 2px solid #444;
+}
+
+.navitem a:active {
+    _border-top: 2px solid #444;
+    _border-left: 2px solid #444;
+    _border-bottom: 2px solid #fff;
+    _border-right: 2px solid #fff;
+}
+
+.navsep {
+    _display: inline;
+}
+
+.profile-detail {
+    _text-align: center;
+}
+
+.project-detail {
+    _text-align: center;
+}
