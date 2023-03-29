@@ -32,7 +32,7 @@
     </div>
     <div class="container">
         <div id="header" class="header">
-            <h1 class="logo">
+            <h1 class="logo" aria-hidden="true">
                 <span>K</span><span>e</span><span>n</span><span>n</span><span>y</span><span>&nbsp;</span><span>H</span><span>u</span><span>i</span>
             </h1>
             <!-- Special -->
@@ -101,24 +101,79 @@
             <!-- Intro -->
             <div id="intro" class="section center">
                 <div class="profile">
+                    <input id="cb1" type="radio" checked name="radio">
+                    <input id="cb2" type="radio" name="radio">
+                    <input id="cb3" type="radio" name="radio">
+                    <div class="tab">
+                        <label class="tab-select" for="cb1">Introduction</label>
+                        <span class="separator"></span>
+                        <label class="tab-select" for="cb2">PC Setup</label>
+                        <span class="separator"></span>
+                        <label class="tab-select" for="cb3">Fun fact</label>
+                        <br>
+                    </div>
                     <div class="profile-img">
                         <img alt="LX86 Logo" src="img/pfp.png">
                     </div>
-                    <div class="profile-detail">
-                        <h1><a name="intro">Hi there</a></h1>
-                        <p>I am Kenny Hui (Better known as LX86). I sometimes code stuff, whether you like it or not.</p>
-                        <p>I like and hate technologies, and I am not a fan of mainstream social media.</p>
-                        <br>
-                        <p>Pronouns: <b>He/Him</b>, GMT+8</p>
-                        <p>Technologies I am comfortable working with:</p>
-                        <!-- This is a space-filling, otherwise useless section "demonstrating" me being able to code in different syntax -->
-                        <!-- Gimme time to learn like idk svelte or something -->
-                        <div class="inline-icons">
-                            <img class="clickable" title="HTML5" alt="HTML5" src="./img/external/html5.png">
-                            <img class="clickable" title="CSS" alt="CSS" src="./img/external/css.png">
-                            <img class="clickable" title="Javascript" alt="Javascript" src="./img/external/js.png">
-                            <img class="clickable" title="C#" alt="C#" src="./img/external/csharp.png">
-                            <img class="clickable" title="Java" alt="Java" src="./img/external/java.png">
+                    <div class="profile-wrapper">
+                        <div class="profile-detail first">
+                            <h1><a name="intro">Hi there</a></h1>
+                            <p>I am Kenny Hui (Better known as LX86). I sometimes code stuff, whether you like it or not.</p>
+                            <p>I like and hate technologies, and I am not a fan of mainstream social media.</p>
+                            <br>
+                            <p>Pronouns: <b>He/Him</b>, GMT+8</p>
+                            <p>Technologies I am comfortable working with:</p>
+                            <!-- This is a space-filling, otherwise useless section "demonstrating" me being able to code in different syntax -->
+                            <!-- Gimme time to learn like idk svelte or something -->
+                            <div class="inline-icons">
+                                <img class="clickable" title="HTML5" alt="HTML5" src="./img/external/html5.png">
+                                <img class="clickable" title="CSS" alt="CSS" src="./img/external/css.png">
+                                <img class="clickable" title="Javascript" alt="Javascript" src="./img/external/js.png">
+                                <img class="clickable" title="C#" alt="C#" src="./img/external/csharp.png">
+                                <img class="clickable" title="Java" alt="Java" src="./img/external/java.png">
+                            </div>
+                        </div>
+                        <div class="profile-detail second">
+                            <h1><a name="intro">PC Specs</a></h1>
+                            <table>
+                                <tr>
+                                    <td>CPU:</td>
+                                    <td>i5-7500</td>
+                                </tr>
+                                <tr>
+                                    <td>RAM:</td>
+                                    <td>8x2GB DDR4 @ 2400Mhz</td>
+                                </tr>
+                                <tr>
+                                    <td>GPU:</td>
+                                    <td>NVIDIA GTX 1660 SUPER</td>
+                                </tr>
+                                <tr>
+                                    <td>Storage:&nbsp;</td>
+                                    <td>PLEXTOR PX-256M6S (SSD, 256GB, Windows 10)
+                                        <br>HDD: WDC WD30EZRX (HDD, 3TB, Data and VM)
+                                        <br>HDD: ST2000DM001 (HDD, 2TB Data and games, 300GB for Linux)</td>
+                                </tr>
+                                <tr>
+                                    <td>OS:&nbsp;</td>
+                                    <td>Debian 12 (Main)<br>Windows 10 (Secondary)</td>
+                                </tr>
+                                <tr>
+                                    <td>Monitors:&nbsp;</td>
+                                    <td>BenQ G2412D (Primary, 1920x1080@60Hz)
+                                        <br>LG L226WTQ (Secondary, 1680x1050@60Hz)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="profile-detail third">
+                            <h1><a name="intro">Fun Fact</a></h1>
+                            <ul>
+                                <li>I am very picky about how fonts look on computer, for this reason I hate Windows ClearType.</li>
+                                <li>While I do prefer FOSS software and platforms, I still use what works best for me, including proprietary software.</li>
+                                <li>I am obligated to write this site in pure CSS in less than 512KB because yes.</li>
+                                <li>This tab system would be a flip card if I actually know CSS.</li>
+                                <li>Blobfox and Blobcat are cool :D</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -302,12 +357,13 @@
                         </div>
                         <div class="project center">
                             <div class="project-img">
-                                <img class="clickable" alt="Fediverse" decoding="async" src="img/contact/mastodon.png">
+                                <img class="clickable" alt="Fediverse" decoding="async" src="img/contact/fedi.png">
                             </div>
                             <div class="project-detail">
                                 <h1>Fediverse</h1>
                                 <p>Follow what am I up to!</p>
                                 <p><a rel="me" href="//wetdry.world/@LX862" target="_blank">@LX862@wetdry.world</a></p>
+                                <p><a rel="me" href="//stop.voring.me/@lx862" target="_blank">@lx862@stop.voring.me</a></p>
                             </div>
                         </div>
                     </div>

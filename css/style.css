@@ -33,6 +33,11 @@ img::selection {
     background-color: #FFF;
 }
 
+.profile-detail::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 60px;
+}
+
 ::-webkit-scrollbar {
     background-color: var(--solid-bg-color);
 }
@@ -46,19 +51,24 @@ b, h1 {
     font-weight: 600;
 }
 
-
-a:link, a:visited, a:active {
+a {
     position: relative;
     color: var(--link-color);
     text-decoration: none;
 }
 
-a:link:hover, a:visited:hover, a:active:hover {
+a{
     text-decoration: underline;
 }
 
-a:link:focus-visible, a:visited:focus-visible, a:active:focus-visible {
+a {
     text-decoration: underline;
+}
+
+h1 a {
+    color: var(--text-color);
+    color: #FFF;
+    text-decoration: none;
 }
 
 a img {
@@ -116,10 +126,72 @@ a.skip-to-content {
     filter: drop-shadow(0 0 12px #000);
 }
 
-.profile-detail {
+.profile-wrapper {
+    position: relative;
     display: inline-block;
-    text-align: left;
     max-width: 700px;
+}
+
+.profile-detail {
+    text-align: left;
+    overflow: auto;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cb1, #cb2, #cb3 {
+    position: absolute;
+    opacity: 0;
+}
+
+#cb1:checked ~ .profile-wrapper .profile-detail.first,
+#cb2:checked ~ .profile-wrapper .profile-detail.second,
+#cb3:checked ~ .profile-wrapper .profile-detail.third {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+.profile-detail {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.profile-detail.first {
+    position: relative;
+}
+
+.tab-select {
+    position: relative;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.tab-select::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    background: #FFF;
+    height: 2px;
+}
+
+#cb1:checked ~ .tab > .tab-select:nth-child(1):before,
+#cb2:checked ~ .tab > .tab-select:nth-of-type(2):before,
+#cb3:checked ~ .tab > .tab-select:nth-of-type(3):before {
+    left: 0%;
+    width: 100%;
+}
+
+.tab .separator {
+    display: inline-block;
+    width: 1px;
+    height: 2rem;
+    vertical-align: middle;
+    background: linear-gradient(transparent 0%, var(--text-color) 50%, transparent 100%);
 }
 
 .special-msg-wrapper {
@@ -217,7 +289,7 @@ a.back-to-top {
     position: relative;
 }
 
-.tooltip:hover:before {
+.tooltip:hover:before, .tooltip:focus:before {
     transform: translateX(-50%) translateY(0);
     opacity: 1;
     visibility: visible;

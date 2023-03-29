@@ -213,6 +213,19 @@
         transition: background-color 0.2s;
     }
 
+    .profile-detail {
+        transform: scale(0.9);
+        transition: transform 0.3s, opacity 0.15s;
+    }
+
+    .tab-select {
+        transition: background-size 0.15s;
+    }
+
+    .tab-select::before {
+        transition: left 0.15s, width 0.15s;
+    }
+
     .special-msg {
         animation: foxRandomize 0.5s infinite steps(9, end);
         animation-fill-mode: forwards;

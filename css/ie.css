@@ -3,8 +3,12 @@ body {
     _color: black;
 }
 
-.bg {
+.bg, .tab, .profile input {
     display: none;
+}
+
+h1 a {
+    _color: black;
 }
 
 .logo span {
@@ -29,7 +33,6 @@ body {
 }
 
 .section {
-    /* _display: block; */
     _width: 100%;
     _padding: 20px;
     _margin-top: 25px;
@@ -79,9 +82,7 @@ body {
 }
 
 .profile-detail {
-    _text-align: center;
-}
-
-.project-detail {
+    position: relative;
+    visibility: visible;
     _text-align: center;
 }
