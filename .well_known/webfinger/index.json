@@ -1,0 +1,20 @@
+{
+    "subject": "acct:LX862@wetdry.world",
+    "aliases": ["https://wetdry.world/@LX862", "https://wetdry.world/users/LX862"],
+    "links": [
+        {
+            "rel":"http://webfinger.net/rel/profile-page",
+            "type":"text/html",
+            "href":"https://wetdry.world/@LX862"
+        },
+        {
+            "rel":"self",
+            "type":"application/activity+json",
+            "href":"https://wetdry.world/users/LX862"
+        },
+        {
+            "rel":"http://ostatus.org/schema/1.0/subscribe",
+            "template":"https://wetdry.world/authorize_interaction?uri={uri}"
+        }
+    ]
+}
