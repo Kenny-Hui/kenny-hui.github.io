@@ -23,7 +23,7 @@
     
     @keyframes mouseUp {
         0% {
-            transform: scale(0.95) perspective(500px) rotate3d(1, 0, 0, 10deg);
+            transform: scale(0.9);
         }
         100% {
             transform: scale(1);
@@ -35,7 +35,7 @@
             transform: scale(1);
         }
         100% {
-            transform: scale(0.95) perspective(500px) rotate3d(1, 0, 0, 10deg);
+            transform: scale(0.9);
         }
     }
     
@@ -215,7 +215,7 @@
 
     .profile-detail {
         transform: scale(0.9);
-        transition: transform 0.3s, opacity 0.15s;
+        transition: transform 0.3s, opacity 0.3s;
     }
 
     .tab-select {

@@ -18,21 +18,6 @@
    --solid-bg-color: #363330;
 }
 
-html, body {
-    font-family: 'Jost', 'Trebuchet MS', 'Segoe UI', "Arial", sans-serif;
-    line-height: 1.5;
-    color: white;
-    color: var(--text-color);
-}
-
-::selection {
-    background-color: var(--purple-highlight);
-}
-
-img::selection {
-    background-color: #FFF;
-}
-
 .profile-detail::-webkit-scrollbar {
     width: 12px;
     border-radius: 60px;
@@ -47,22 +32,31 @@ img::selection {
     background-color: var(--focusBgColor);
 }
 
-b, h1 {
-    font-weight: 600;
+::selection {
+    background-color: var(--purple-highlight);
+}
+
+img::selection {
+    background-color: #FFF;
+}
+
+html, body {
+    font-family: 'Jost', 'Trebuchet MS', 'Segoe UI', system-ui;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    color: var(--text-color);
 }
 
 a {
     position: relative;
     color: var(--link-color);
-    text-decoration: none;
-}
-
-a{
     text-decoration: underline;
 }
 
-a {
-    text-decoration: underline;
+a img {
+    border-color: transparent;
+    background-color: transparent;
 }
 
 h1 a {
@@ -71,9 +65,16 @@ h1 a {
     text-decoration: none;
 }
 
-a img {
-    border-color: transparent;
-    background-color: transparent;
+b, h1 {
+    font-weight: 600;
+}
+
+li {
+    padding: 2px 0;
+}
+
+small {
+    font-size: 0.75em;
 }
 
 a.skip-to-content {
@@ -81,7 +82,6 @@ a.skip-to-content {
     top: -100%;
     left: 0;
     color: var(--text-color);
-    font-size: 24px;
 }
 
 .skip-to-content:focus {
@@ -116,13 +116,12 @@ a.skip-to-content {
 .profile-img {
     display: inline-block;
     vertical-align: top;
-    padding: 0.5em 15px;
+    padding: .5em 1em;
 }
 
 .profile-img img {
     width: 148px;
-    border-radius: 25px;
-    vertical-align: middle;
+    border-radius: 26px;
     filter: drop-shadow(0 0 12px #000);
 }
 
@@ -140,14 +139,15 @@ a.skip-to-content {
     opacity: 0;
 }
 
-#cb1, #cb2, #cb3 {
+#cb1, #cb2, #cb3, #cb4 {
     position: absolute;
     opacity: 0;
 }
 
 #cb1:checked ~ .profile-wrapper .profile-detail.first,
 #cb2:checked ~ .profile-wrapper .profile-detail.second,
-#cb3:checked ~ .profile-wrapper .profile-detail.third {
+#cb3:checked ~ .profile-wrapper .profile-detail.third,
+#cb4:checked ~ .profile-wrapper .profile-detail.fourth {
     transform: none;
     opacity: 1;
     visibility: visible;
@@ -181,7 +181,8 @@ a.skip-to-content {
 
 #cb1:checked ~ .tab > .tab-select:nth-child(1):before,
 #cb2:checked ~ .tab > .tab-select:nth-of-type(2):before,
-#cb3:checked ~ .tab > .tab-select:nth-of-type(3):before {
+#cb3:checked ~ .tab > .tab-select:nth-of-type(3):before,
+#cb4:checked ~ .tab > .tab-select:nth-of-type(4):before {
     left: 0%;
     width: 100%;
 }

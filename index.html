@@ -104,24 +104,27 @@
                     <input id="cb1" type="radio" checked name="radio">
                     <input id="cb2" type="radio" name="radio">
                     <input id="cb3" type="radio" name="radio">
+                    <input id="cb4" type="radio" name="radio">
                     <div class="tab">
                         <label class="tab-select" for="cb1">Introduction</label>
                         <span class="separator"></span>
                         <label class="tab-select" for="cb2">PC Setup</label>
                         <span class="separator"></span>
                         <label class="tab-select" for="cb3">Fun fact</label>
+                        <span class="separator"></span>
+                        <label class="tab-select" for="cb4">Changelog</label>
                         <br>
                     </div>
                     <div class="profile-img">
-                        <img alt="LX86 Logo" src="img/pfp.png">
+                        <img alt="LX86 Logo" src="img/pfp.png" class="clickable">
                     </div>
                     <div class="profile-wrapper">
                         <div class="profile-detail first">
                             <h1><a name="intro">Hi there</a></h1>
-                            <p>I am Kenny Hui (Better known as LX86). I sometimes code stuff, whether you like it or not.</p>
-                            <p>I like and hate technologies, and I am not a fan of mainstream social media.</p>
+                            <p>My name is Kenny Hui (Better known as LX86) and... idk I like learning technologies especially at the software side of thing, and maybe do some programming if I really have to.</p>
                             <br>
-                            <p>Pronouns: <b>He/Him</b>, GMT+8</p>
+                            <p>Pronouns: <b>He/Him</b></p>
+                            <p>Timezone <small>(I hate it)</small>: <b>GMT+8, Asia/Hong_Kong</b></p>
                             <p>Technologies I am comfortable working with:</p>
                             <!-- This is a space-filling, otherwise useless section "demonstrating" me being able to code in different syntax -->
                             <!-- Gimme time to learn like idk svelte or something -->
@@ -134,7 +137,7 @@
                             </div>
                         </div>
                         <div class="profile-detail second">
-                            <h1><a name="intro">PC Specs</a></h1>
+                            <h1>PC Specs</h1>
                             <table>
                                 <tr>
                                     <td>CPU:</td>
@@ -150,29 +153,33 @@
                                 </tr>
                                 <tr>
                                     <td>Storage:&nbsp;</td>
-                                    <td>PLEXTOR PX-256M6S (SSD, 256GB, Windows 10)
-                                        <br>HDD: WDC WD30EZRX (HDD, 3TB, Data and VM)
-                                        <br>HDD: ST2000DM001 (HDD, 2TB Data and games, 300GB for Linux)</td>
+                                    <td>PLEXTOR PX-256M6S (256GB, Windows 10)
+                                        <br>HDD: WDC WD30EZRX (3TB, Misc Data and VM)
+                                        <br>HDD: ST2000DM001 (2TB Projects and games, 300GB for Linux)</td>
                                 </tr>
                                 <tr>
                                     <td>OS:&nbsp;</td>
                                     <td>Debian 12 (Main)<br>Windows 10 (Secondary)</td>
                                 </tr>
-                                <tr>
-                                    <td>Monitors:&nbsp;</td>
-                                    <td>BenQ G2412D (Primary, 1920x1080@60Hz)
-                                        <br>LG L226WTQ (Secondary, 1680x1050@60Hz)</td>
-                                </tr>
                             </table>
                         </div>
                         <div class="profile-detail third">
-                            <h1><a name="intro">Fun Fact</a></h1>
+                            <h1>Fun <small>(and not so fun)</small> Fact</h1>
                             <ul>
-                                <li>I am very picky about how fonts look on computer, for this reason I hate Windows ClearType.</li>
-                                <li>While I do prefer FOSS software and platforms, I still use what works best for me, including proprietary software.</li>
-                                <li>I am obligated to write this site in pure CSS in less than 512KB because yes.</li>
+                                <li>Please do look through my blog if you want to learn more about me (Yes there's an "About" page there as well)</li>
+                                <li>I am not looking for a job at the moment.</li>
+                                <li>All the cringeworthy stuff are burried under my YouTube account.</li>
+                                <li>This site is made out of &lt;div&gt; because backward compatibility > *</li>
+                                <li>This site currently weighs less than 512KB, but it doesn't actually load faster than other sites with 1MB+.</li>
                                 <li>This tab system would be a flip card if I actually know CSS.</li>
                                 <li>Blobfox and Blobcat are cool :D</li>
+                                <li>I am not a designer I am not a designer I am not a designer</li>
+                            </ul>
+                        </div>
+                        <div class="profile-detail fourth">
+                            <h1>Site changelog</h1>
+                            <ul>
+                                <li>2023-04-20: More fun wording, subtle change to animation, add site changlog.</li>
                             </ul>
                         </div>
                     </div>
@@ -183,7 +190,7 @@
             <!-- Projects -->
             <div id="projects" class="section center">
                 <h1 class="header"><a name="projects">Projects</a></h1>
-                <p>Here are the project I have been working so far:</p>
+                <p>Here are the primary project I have been working so far:</p>
                 <!-- Projects List Start -->
                 <div class="project-container">
                     <div class="project-group">
@@ -347,16 +354,6 @@
                     <div class="project-group">
                         <div class="project center">
                             <div class="project-img">
-                                <img class="clickable" alt="Email" decoding="async" src="img/contact/mail.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>Email</h1>
-                                <p>Wanna leave a message?</p>
-                                <p><a href="mailto:lx86@lx862.com">lx86@lx862.com</a></p>
-                            </div>
-                        </div>
-                        <div class="project center">
-                            <div class="project-img">
                                 <img class="clickable" alt="Fediverse" decoding="async" src="img/contact/fedi.png">
                             </div>
                             <div class="project-detail">
@@ -364,6 +361,16 @@
                                 <p>Follow what am I up to!</p>
                                 <p><a rel="me" href="//wetdry.world/@LX862" target="_blank">@LX862@wetdry.world</a></p>
                                 <p><a rel="me" href="//stop.voring.me/@lx862" target="_blank">@lx862@stop.voring.me</a></p>
+                            </div>
+                        </div>
+                        <div class="project center">
+                            <div class="project-img">
+                                <img class="clickable" alt="Email" decoding="async" src="img/contact/mail.png">
+                            </div>
+                            <div class="project-detail">
+                                <h1>Email</h1>
+                                <p>Wanna leave a message?</p>
+                                <p><a href="mailto:lx86@lx862.com">lx86@lx862.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -381,7 +388,7 @@
                         <!-- <div class="project center">
                             Waiting to be more mature :P
                             <div class="project-img">
-                                <img class="clickable" alt="Discord" decoding="async" src="img/contact/revolt.png">
+                                <img class="clickable" alt="Revolt" decoding="async" src="img/contact/revolt.png">
                             </div>
                             <div class="project-detail">
                                 <h1>Revolt</h1>
@@ -407,7 +414,7 @@
                 <div class="card-container">
                     <a class="card" target="_blank" href="//volpeon.ink/projects/emojis/blobfox">
                         <h2>Volpeon</h2>
-                        <p>Some blobfox emotes are used and displayed on this page</p>
+                        <p>Some blobfox emotes are used and shown on this page.<br>See if you can find it :)</p>
                     </a>
                     <a class="card" target="_blank" href="//int10h.org/oldschool-pc-fonts/">
                         <h2>Oldschool PC Fonts</h2>
@@ -415,7 +422,7 @@
                     </a>
                     <a class="card" target="_blank" href="//freeplay.codeberg.page/">
                         <h2 class="nowrap">Free<span class="hover-spoiler">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>play</h2>
-                        <p>Creating a CSS-only site so good that I have to redesign this site. Also learnt some CSS tricks and a11y along the way.</p>
+                        <p>Cool site, cool site. I ended up taking some inspiration to here :P, Also learnt some CSS tricks and a11y along the way.</p>
                     </a>
                     <a class="card" target="_blank" href="//pages.github.com">
                         <h2>GitHub Pages</h2>
@@ -462,7 +469,7 @@
                 <br>
                 <img alt="Viewable in any browser" src="./img/8831/allbrowser.gif">
                 <img alt="We do a little trolling" src="./img/8831/wdalt.png">
-                <img alt="W3C valid css" src="img/8831/valid-css.png">
+                <img alt="W3C valid css" src="./img/8831/valid-css.png">
                 <img alt="Keep the web free, say no to Web3" src="./img/8831/saynotoweb3.gif">
             </div>
         </div>
