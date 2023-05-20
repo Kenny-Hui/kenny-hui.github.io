@@ -262,6 +262,10 @@ h1 {
     background-color: #211000;
 }
 
+.deprecated {
+    color: #888;
+}
+
 a.back-to-top {
     position: sticky;
     display: inline-block;
