@@ -36,15 +36,10 @@
     background-color: var(--purple-highlight);
 }
 
-img::selection {
-    background-color: #FFF;
-}
-
 html, body {
-    font-family: 'Jost', 'Trebuchet MS', 'Segoe UI', system-ui;
+    font-family: 'Jost', 'Trebuchet MS', sans-serif;
     font-size: 18px;
     line-height: 1.5;
-    color: #FFF;
     color: var(--text-color);
 }
 
@@ -57,12 +52,6 @@ a {
 a img {
     border-color: transparent;
     background-color: transparent;
-}
-
-h1 a {
-    color: #FFF;
-    color: var(--text-color);
-    text-decoration: none;
 }
 
 h1, b {
@@ -81,11 +70,15 @@ small {
     font-size: 0.75em;
 }
 
-a.skip-to-content {
+header {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.skip-to-content {
     position: absolute;
     top: -100%;
     left: 0;
-    color: #FFF;
     color: var(--text-color);
 }
 
@@ -104,7 +97,8 @@ a.skip-to-content {
 
 .logo > span {
     display: inline-block;
-    margin: 0 -1px;
+    /* Put title word closer together */
+    margin: 0 -0.05rem;
 }
 
 .profile {
@@ -125,14 +119,14 @@ a.skip-to-content {
 
 .profile-img img {
     width: 148px;
-    border-radius: 26px;
-    filter: drop-shadow(0 0 12px #000);
+    border-radius: 1.5rem;
+    filter: drop-shadow(0 0 1rem #000);
 }
 
 .profile-wrapper {
     position: relative;
     display: inline-block;
-    max-width: 700px;
+    max-width: 40rem;
 }
 
 .profile-detail {
@@ -179,7 +173,7 @@ a.skip-to-content {
     bottom: 0;
     left: 50%;
     width: 0%;
-    background: #FFF;
+    background: var(--text-color);
     height: 2px;
 }
 
@@ -219,11 +213,6 @@ a.skip-to-content {
     height: 64px;
 }
 
-.header {
-    text-align: center;
-    margin: 10px 0;
-}
-
 .bg {
     position: fixed;
 	height: 100%;
@@ -242,7 +231,6 @@ a.skip-to-content {
     height: 1400px;
     background-color: white;
     border-radius: 50%;
-    /* older FF performance is p bad with the blur, altho I don't think we have a better way atm? */
     filter: blur(100px);
 }
 
@@ -262,16 +250,12 @@ a.skip-to-content {
     background-color: #211000;
 }
 
-.deprecated {
-    color: #888;
-}
-
 a.back-to-top {
     position: sticky;
     display: inline-block;
-    top: -70px;
+    top: -4rem;
     transform: translateY(100vh);
-    left: calc(100% - 70px);
+    left: calc(100% - 4rem);
     z-index: 2;
 }
 
@@ -317,7 +301,7 @@ a.back-to-top {
     z-index: 2;
 }
 
-.container {
+main {
     font-size: 20px;
     width: 100%;
     margin: 0 auto;
@@ -338,33 +322,38 @@ a.back-to-top {
 }
 
 .navitem a {
-    color: #FFF;
     color: var(--text-color);
 }
 
 .project-container {
-    width: max-content;
+    display: inline-block;
     max-width: 100%;
     margin: 20px auto;
     text-align: center;
+}
+
+.ace {
+    display: inline-block;
+    width: 1.7em;
+    height: 1.2em;
+    border-radius: 0.2rem;
+    margin-right: 0.2rem;
+    background: linear-gradient(#000000 25%, #A5A5A5 25%,  #A5A5A5 50%, #FFFFFF 50%, #FFFFFF 75%, #810081 75%, #810081 100%);
+    vertical-align: sub;
 }
 
 .project {
     display: inline-block;
     box-sizing: border-box;
     vertical-align: top;
-    white-space: normal;
     width: 600px;
     max-width: 100%;
     border-radius: 20px;
     padding: 10px 20px;
-    margin: 0;
 }
 
 .project:hover {
     box-shadow: 0 0 32px 0 #000;
-    background-color: #444;
-    background-color: rgba(90, 90, 90, 0.75);
     background-color: var(--hoverBgColor);
 }
 
@@ -421,7 +410,6 @@ a[href].card, .card {
     display: block;
     width: 100%;
     height: 100%;
-    color: #FFF;
     color: var(--text-color);
     background-color: #444;
     background: var(--solid-bg-color);
@@ -450,7 +438,6 @@ a[href].card, .card {
 
 .webring-container .random {
     text-align: center;
-    color: #FFF;
     color: var(--text-color);
     margin-top: 10px;
 }
@@ -531,7 +518,7 @@ a[href].webring-card {
     margin: auto;
 }
 
-.section .header {
+.section .title {
     font-weight: 600;
     text-align: center;
 }

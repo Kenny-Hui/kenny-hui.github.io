@@ -1,5 +1,5 @@
-var input = document.getElementById("input");
-var d1 = document.getElementById("d1");
+let input = document.getElementById("input");
+let d1 = document.getElementById("d1");
 
 d1.removeAttribute("hidden");
 

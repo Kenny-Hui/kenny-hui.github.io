@@ -292,9 +292,13 @@
         animation-delay: 0.55s;
     }
 
-    .project-container:hover .project:not(:hover) {
-        opacity: 0.3;
-        transform: scale(0.95);
+    
+    /* Only fade out other elements when screen is wide enough, which are assumed to be some sort of non-mobile device */
+    @media screen and (min-width: 800px) {
+        .project-container:hover .project:not(:hover) {
+            opacity: 0.3;
+            transform: scale(0.95);
+        }
     }
 
     .project:hover {
