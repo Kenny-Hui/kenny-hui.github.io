@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <p id="td"></p>
+      <h1 id="qt">LX time is now</h1>
+      <h3 id="state"></h3>
+    </main>
+    <footer></footer>
+  </body>
+  
+  <style>
+    #td {
+      font-style: italic;
+    }
+  </style>
+  
+  <script>
+    let myTz = 8 * 60;
+    let tz = new Date().getTimezoneOffset();
+    let tzDiff = myTz - (-tz);
+    if(tzDiff == 0) {
+      document.getElementById("td").textContent = "Spot on!";
+    } else if(tzDiff < 0) {
+      document.getElementById("td").textContent = "You are ahead of me by " + (-tzDiff / 60) + " hours";
+    } else if(tzDiff > 0) {
+      document.getElementById("td").textContent = "You are behind me by " + (tzDiff / 60) + " hours";
+    }
+    
+    let time = new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Hong_Kong',hour: '2-digit', minute:'2-digit', hour12: false });
+    document.getElementById("qt").textContent = "LX Time is now " + time + " (UTC+8)";
+    
+    let th = time.split(":")[0];
+    if(th < 08) {
+      document.getElementById("state").textContent = "Probably asleep";
+    } else if(th < 17) {
+      document.getElementById("state").textContent = "Probably at school, or not";
+    } else if(th == 18) {
+      document.getElementById("state").textContent = "Probably dinner";
+    } else {
+      document.getElementById("state").textContent = "Probably devoting time to non-essential stuff";
+    }
+  </script>
+</html>

@@ -1,5 +1,5 @@
-let input = document.getElementById("input");
-let d1 = document.getElementById("d1");
+const input = document.getElementById("input");
+const d1 = document.getElementById("d1");
 
 d1.removeAttribute("hidden");
 
@@ -25,7 +25,7 @@ function doWork(message, key) {
     input.innerHTML += "<br>" + message;
 
     if(key === "1") {
-        window.location.href = "http://" + window.location.host + "/index.html";
+        window.location.href = "index.html";
     }
 
     if(key === "2") {
