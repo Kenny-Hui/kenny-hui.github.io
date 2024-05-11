@@ -27,7 +27,7 @@
         <div class="bgcircle"></div>
     </div>
 
-    <header id="header">
+    <header>
         <h1 class="logo" aria-hidden="true">
             <span>K</span><span>e</span><span>n</span><span>n</span><span>y</span><span>&nbsp;</span><span>H</span><span>u</span><span>i</span>
         </h1>
@@ -96,405 +96,409 @@
     </header>
 
     <main>
-        <div class="main">
-            <!-- Intro -->
-            <div id="intro" class="section center">
-                <div class="profile">
-                    <input id="cb1" type="radio" checked name="radio">
-                    <input id="cb2" type="radio" name="radio">
-                    <input id="cb3" type="radio" name="radio">
-                    <input id="cb4" type="radio" name="radio">
-                    <div class="tab">
-                        <label class="tab-select" for="cb1">Introduction</label>
-                        <span class="separator"></span>
-                        <label class="tab-select" for="cb2">PC Setup</label>
-                        <span class="separator"></span>
-                        <label class="tab-select" for="cb3">Fun fact</label>
-                        <span class="separator"></span>
-                        <label class="tab-select" for="cb4">Changelog</label>
+        <!-- Intro -->
+        <div id="intro" class="section center">
+            <div class="profile">
+                <input id="cb1" type="radio" checked name="radio">
+                <input id="cb2" type="radio" name="radio">
+                <input id="cb3" type="radio" name="radio">
+                <input id="cb4" type="radio" name="radio">
+                <div class="tab">
+                    <label class="tab-select" for="cb1">Introduction</label>
+                    <span class="separator"></span>
+                    <label class="tab-select" for="cb2">PC Setup</label>
+                    <span class="separator"></span>
+                    <label class="tab-select" for="cb3">Fun fact</label>
+                    <span class="separator"></span>
+                    <label class="tab-select" for="cb4">Changelog</label>
+                    <br>
+                </div>
+                <div class="profile-img">
+                    <img alt="LX86 Logo" src="img/pfp.png" class="clickable">
+                </div>
+                <div class="profile-wrapper">
+                    <div class="profile-detail first">
+                        <h1>Hi there</h1>
+                        <p>I am Kenny Hui (Better known as LX86). I find problem everyday, solves it, then finds out I am the one creating the problems :3</p>
                         <br>
+                        <p>Pronouns: <b>Any</b> <span class="ace"></span></p>
+                        <p>Timezone <small>(I hate it)</small>: <b>GMT+8, Asia/Hong_Kong</b></p>
+                        <p>Technologies I am comfortable working with:</p>
+                        <!-- This is a space-filling, otherwise useless section "demonstrating" me being able to code in different syntax -->
+                        <!-- Gimme time to learn like idk svelte or something -->
+                        <div class="inline-icons">
+                            <img class="clickable" title="HTML5" alt="HTML5" src="img/external/html5.png">
+                            <img class="clickable" title="CSS" alt="CSS" src="img/external/css.png">
+                            <img class="clickable" title="Javascript" alt="Javascript" src="img/external/js.png">
+                            <img class="clickable" title="C#" alt="C#" src="img/external/csharp.png">
+                            <img class="clickable" title="Java" alt="Java" src="img/external/java.png">
+                        </div>
                     </div>
-                    <div class="profile-img">
-                        <img alt="LX86 Logo" src="img/pfp.png" class="clickable">
+                    <div class="profile-detail second">
+                        <h1>PC Specs</h1>
+                        <table>
+                            <tr>
+                                <td>CPU:</td>
+                                <td>i5-7500</td>
+                            </tr>
+                            <tr>
+                                <td>RAM:</td>
+                                <td>8x2GB DDR4 @ 2400Mhz</td>
+                            </tr>
+                            <tr>
+                                <td>GPU:</td>
+                                <td>NVIDIA GTX 1660 SUPER</td>
+                            </tr>
+                            <tr>
+                                <td>Storage:&nbsp;</td>
+                                <td>PLEXTOR PX-256M6S (256GB, Windows 10)
+                                    <br>HDD: WDC WD30EZRX (3TB, Misc Data and VM)
+                                    <br>HDD: ST2000DM001 (2TB Projects and games, 300GB for Linux)</td>
+                            </tr>
+                            <tr>
+                                <td>OS:&nbsp;</td>
+                                <td>Debian Testing (Main)<br>Windows 10 (Secondary)</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="profile-wrapper">
-                        <div class="profile-detail first">
-                            <h1>Hi there</h1>
-                            <p>I am Kenny Hui (Better known as LX86). I find problem everyday, solves it, then finds out I am the one creating the problems :3</p>
-                            <br>
-                            <p>Pronouns: <b>Any</b> <span class="ace"></span></p>
-                            <p>Timezone <small>(I hate it)</small>: <b>GMT+8, Asia/Hong_Kong</b></p>
-                            <p>Technologies I am comfortable working with:</p>
-                            <!-- This is a space-filling, otherwise useless section "demonstrating" me being able to code in different syntax -->
-                            <!-- Gimme time to learn like idk svelte or something -->
+                    <div class="profile-detail third">
+                        <h1>Fun <small>(and not so fun)</small> Fact</h1>
+                        <ul>
+                            <li>Please do look through my blog if you want to learn more about me (Yes there's an "About" page there as well)</li>
+                            <li>I am not looking for a job at the moment. <small>//TODO: REMOVE THIS</small></li>
+                            <li>ISO 8601 shill!</li>
+                            <li>This site currently weighs less than 512KB, but it doesn't actually load faster than other sites with 1MB+.</li>
+                            <li>Blobfox and Blobcat are cool :D</li>
+                            <li>I pretend I am a graphics designer, no I suck at it lol</li>
+                        </ul>
+                    </div>
+                    <div class="profile-detail fourth">
+                        <h1>Site changelog</h1>
+                        <ul>
+                            <li>2024-04-30: Slight cleanup, update profile picture</li>
+                            <li>2023-06-09: Update calckey account, removed Discord and added Revolt as contact method</li>
+                            <li>2023-05-20: Update projects</li>
+                            <li>2023-04-20: More fun wording, subtle change to animation, add site changlog.</li>
+                            <li>2023-10-01: Drop ancient browser support, be sensible, update projects.</li>
+                            <li>2023-12-10: General cleanup</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p>Have a nice day browsing through the internet!</p>
+        </div>
+        
+        <!-- Projects -->
+        <div id="projects" class="section center">
+            <h1 class="title">Minecraft Projects</h1>
+            <!-- Projects List Start -->
+            <div class="project-container">
+                <div class="project-group">
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="TakeASeat logo" decoding="async" src="img/project/tas.png">
+                        </div>
+                        <div class="project-detail">
+                            <h1>TakeASeat</h1>
+                            <p>Server-side fabric mod that allows you to sit on stairs/customizable list of blocks.</p>
                             <div class="inline-icons">
-                                <img class="clickable" title="HTML5" alt="HTML5" src="img/external/html5.png">
-                                <img class="clickable" title="CSS" alt="CSS" src="img/external/css.png">
-                                <img class="clickable" title="Javascript" alt="Javascript" src="img/external/js.png">
-                                <img class="clickable" title="C#" alt="C#" src="img/external/csharp.png">
-                                <img class="clickable" title="Java" alt="Java" src="img/external/java.png">
+                                <p>
+                                    <a href="https://github.com/Kenny-Hui/TakeASeat"><img class="clickable" alt="Sources" src="img/contact/github.png"></a>
+                                    <a href="https://modrinth.com/mod/takeaseat"><img class="clickable" alt="Modrinth" src="img/external/modrinth.png"></a>
+                                </p>
                             </div>
                         </div>
-                        <div class="profile-detail second">
-                            <h1>PC Specs</h1>
-                            <table>
-                                <tr>
-                                    <td>CPU:</td>
-                                    <td>i5-7500</td>
-                                </tr>
-                                <tr>
-                                    <td>RAM:</td>
-                                    <td>8x2GB DDR4 @ 2400Mhz</td>
-                                </tr>
-                                <tr>
-                                    <td>GPU:</td>
-                                    <td>NVIDIA GTX 1660 SUPER</td>
-                                </tr>
-                                <tr>
-                                    <td>Storage:&nbsp;</td>
-                                    <td>PLEXTOR PX-256M6S (256GB, Windows 10)
-                                        <br>HDD: WDC WD30EZRX (3TB, Misc Data and VM)
-                                        <br>HDD: ST2000DM001 (2TB Projects and games, 300GB for Linux)</td>
-                                </tr>
-                                <tr>
-                                    <td>OS:&nbsp;</td>
-                                    <td>Debian Testing (Main)<br>Windows 10 (Secondary)</td>
-                                </tr>
-                            </table>
+                    </div>
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="Better Tellraw Logo" decoding="async" src="img/project/btellraw.png">
                         </div>
-                        <div class="profile-detail third">
-                            <h1>Fun <small>(and not so fun)</small> Fact</h1>
-                            <ul>
-                                <li>Please do look through my blog if you want to learn more about me (Yes there's an "About" page there as well)</li>
-                                <li>I am not looking for a job at the moment. <small>//TODO: REMOVE THIS</small></li>
-                                <li>ISO 8601 shill!</li>
-                                <li>This site currently weighs less than 512KB, but it doesn't actually load faster than other sites with 1MB+.</li>
-                                <li>Blobfox and Blobcat are cool :D</li>
-                                <li>I pretend I am a graphics designer, no I suck at it lol</li>
-                            </ul>
-                        </div>
-                        <div class="profile-detail fourth">
-                            <h1>Site changelog</h1>
-                            <ul>
-                                <li>2024-04-30: Slight cleanup, update profile picture</li>
-                                <li>2023-06-09: Update calckey account, removed Discord and added Revolt as contact method</li>
-                                <li>2023-05-20: Update projects</li>
-                                <li>2023-04-20: More fun wording, subtle change to animation, add site changlog.</li>
-                                <li>2023-10-01: Drop ancient browser support, be sensible, update projects.</li>
-                                <li>2023-12-10: General cleanup</li>
-                            </ul>
+                        <div class="project-detail">
+                            <h1>Better Tellraw</h1>
+                            <p>Minecraft /tellraw command, but with placeholder variables and an identifier system, making it easy to reuse messages.</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://github.com/Kenny-Hui/BetterTellraw"><img class="clickable" alt="Sources" src="img/contact/github.png"></a>
+                                    <a href="https://modrinth.com/mod/bettertellraw"><img class="clickable" alt="Modrinth" src="img/external/modrinth.png"></a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <p>Have a nice day browsing through the internet!</p>
-            </div>
-            
-            <!-- Projects -->
-            <div id="projects" class="section center">
-                <h1 class="title">Minecraft Projects</h1>
-                <!-- Projects List Start -->
-                <div class="project-container">
-                    <div class="project-group">
-                        <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="TakeASeat logo" decoding="async" src="img/project/tas.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>TakeASeat</h1>
-                                <p>Server-side fabric mod that allows you to sit on stairs/customizable list of blocks.</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/Kenny-Hui/TakeASeat"><img class="clickable" alt="Sources" src="img/contact/github.png"></a>
-                                        <a target="_blank" href="https://modrinth.com/mod/takeaseat"><img class="clickable" alt="Modrinth" src="img/external/modrinth.png"></a>
-                                    </p>
-                                </div>
-                            </div>
+                <div class="project-group">
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="SplashFox Logo" decoding="async" src="img/project/splashfox.png">
                         </div>
-                        <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="Better Tellraw Logo" decoding="async" src="img/project/btellraw.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>Better Tellraw</h1>
-                                <p>Minecraft /tellraw command, but with placeholder variables and an identifier system, making it easy to reuse messages.</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/Kenny-Hui/BetterTellraw"><img class="clickable" alt="Sources" src="img/contact/github.png"></a>
-                                        <a target="_blank" href="https://modrinth.com/mod/bettertellraw"><img class="clickable" alt="Modrinth" src="img/external/modrinth.png"></a>
-                                    </p>
-                                </div>
+                        <div class="project-detail">
+                            <h1>SplashFox</h1>
+                            <p>A Fabric/Quilt-compatible mod that displays an bouncy blobfox on startup.</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://github.com/Kenny-Hui/splashfox"><img alt="Sources" src="img/contact/github.png"></a>
+                                    <a href="https://modrinth.com/mod/splashfox"><img alt="Modrinth" src="img/external/modrinth.png"></a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="project-group">
-                        <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="SplashFox Logo" decoding="async" src="img/project/splashfox.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>SplashFox</h1>
-                                <p>A Fabric/Quilt-compatible mod that displays an bouncy blobfox on startup.</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/Kenny-Hui/splashfox"><img alt="Sources" src="img/contact/github.png"></a>
-                                        <a target="_blank" href="https://modrinth.com/mod/splashfox"><img alt="Modrinth" src="img/external/modrinth.png"></a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="Joban Client Mod" decoding="async" src="img/project/jcm.jpg">
                         </div>
-                        <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="Joban Client Mod" decoding="async" src="img/project/jcm.jpg">
-                            </div>
-                            <div class="project-detail">
-                                <h1>Joban Client Mod</h1>
-                                <p>An addon for the Minecraft Transit Railway Mod. Adding various blocks from the Hong Kong MTR that will improve your world.</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a href="https://modrinth.com/mod/jcm"><img alt="Modrinth" src="img/external/modrinth.png"></a>
-                                    </p>
-                                </div>
+                        <div class="project-detail">
+                            <h1>Joban Client Mod</h1>
+                            <p>An addon for the Minecraft Transit Railway Mod. Adding various blocks from the Hong Kong MTR that will improve your world.</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://modrinth.com/mod/jcm"><img alt="Modrinth" src="img/external/modrinth.png"></a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="project-group">
-                        <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="SplashFox Logo" decoding="async" src="img/project/rpcooldown.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>RecipeCooldown</h1>
-                                <p>Server-side fabric mod to enforce cooldown for crafting recipe request</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/Kenny-Hui/RecipeCooldown"><img alt="Sources" src="img/contact/github.png"></a>
-                                        <a target="_blank" href="https://modrinth.com/mod/recipecooldown"><img alt="Modrinth" src="img/external/modrinth.png"></a>
-                                    </p>
-                                </div>
+                </div>
+                <div class="project-group">
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="SplashFox Logo" decoding="async" src="img/project/rpcooldown.png">
+                        </div>
+                        <div class="project-detail">
+                            <h1>RecipeCooldown</h1>
+                            <p>Server-side fabric mod to enforce cooldown for crafting recipe request</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://github.com/Kenny-Hui/RecipeCooldown"><img alt="Sources" src="img/contact/github.png"></a>
+                                    <a href="https://modrinth.com/mod/recipecooldown"><img alt="Modrinth" src="img/external/modrinth.png"></a>
+                                </p>
                             </div>
                         </div>
-                        <div class="project center">
-                            <div class="project-img">
-                                <img class="clickable" alt="DCLink Logo" decoding="async" src="img/project/svrutil.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>SvrUtil</h1>
-                                <p>Server utilities for Fabric, something like essential but not really, oh and it allows you to make sand float.</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/Kenny-Hui/SvrUtil"><img class="clickable" alt="Sources" src="img/contact/github.png"></a>
-                                        <a target="_blank" href="https://modrinth.com/mod/svrutil"><img alt="Modrinth" src="img/external/modrinth.png"></a>
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="project center">
+                        <div class="project-img">
+                            <img class="clickable" alt="DCLink Logo" decoding="async" src="img/project/svrutil.png">
+                        </div>
+                        <div class="project-detail">
+                            <h1>SvrUtil</h1>
+                            <p>Server utilities for Fabric, something like essential but not really, oh and it allows you to make sand float.</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://github.com/Kenny-Hui/SvrUtil"><img class="clickable" alt="Sources" src="img/contact/github.png"></a>
+                                    <a href="https://modrinth.com/mod/svrutil"><img alt="Modrinth" src="img/external/modrinth.png"></a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="section center">
-                <h1 class="title">Other Projects</h1>
-                <!-- Side Projects List Start -->
-                <div class="project-container">
-                    <div class="project-group">
-                        <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="Eat Every Word" decoding="async" src="img/project/eew.jpg">
-                            </div>
-                            <div class="project-detail">
-                                <h1>Eat Every Word</h1>
-                                <p>A mastodon bot that "eats" every word.</p>
-                                <p>New post every 3 hours</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/Kenny-Hui/EatEveryWord"><img alt="Sources" src="img/contact/github.png"></a>
-                                        <a target="_blank" href="https://botsin.space/@EatEveryWord"><img alt="Mastodon" src="img/contact/mastodon.png"></a>
-                                    </p>
-                                </div>
-                            </div>
+        <div class="section center">
+            <h1 class="title">Other Projects</h1>
+            <!-- Side Projects List Start -->
+            <div class="project-container">
+                <div class="project-group">
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="Eat Every Word" decoding="async" src="img/project/eew.jpg">
                         </div>
-                        <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="MTR PIDS Simulator" decoding="async" src="img/project/mtrpids.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>MTR PIDS Simulator</h1>
-                                <p>A Hong Kong MTR Passenger Information Display System Simulator</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/HKTSS/mtr-pids"><img alt="Sources" src="img/contact/github.png"></a>
-                                        <a target="_blank" href="https://hktss.github.io/mtr-pids"><img alt="Website" src="img/external/internet.png"></a>
-                                    </p>
-                                </div>
+                        <div class="project-detail">
+                            <h1>Eat Every Word</h1>
+                            <p>A mastodon bot that "eats" every word.</p>
+                            <p>New post every 3 hours</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://github.com/Kenny-Hui/EatEveryWord"><img alt="Sources" src="img/contact/github.png"></a>
+                                    <a href="https://botsin.space/@EatEveryWord"><img alt="Mastodon" src="img/contact/mastodon.png"></a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="project-group">
-                        <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="Sticker Lab" decoding="async" src="img/project/stl.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>Sticker Lab</h1>
-                                <p>A place where I draw public signage.</p>
-                                <p>(Mostly Metro related signage)</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/Kenny-Hui/sticker-lab"><img alt="Sources" src="img/contact/github.png"></a>
-                                        <a target="_blank" href="https://lx862.com/sticker-lab"><img alt="Website" src="img/external/internet.png"></a>
-                                    </p>
-                                </div>
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="MTR PIDS Simulator" decoding="async" src="img/project/mtrpids.png">
+                        </div>
+                        <div class="project-detail">
+                            <h1>MTR PIDS Simulator</h1>
+                            <p>A Hong Kong MTR Passenger Information Display System Simulator</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://github.com/HKTSS/mtr-pids"><img alt="Sources" src="img/contact/github.png"></a>
+                                    <a href="https://hktss.github.io/mtr-pids"><img alt="Website" src="img/external/internet.png"></a>
+                                </p>
                             </div>
                         </div>
-                        <!-- <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="LRT PIDS Simulator" decoding="async" src="img/project/nlrt.jpg">
+                    </div>
+                </div>
+                <div class="project-group">
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="Sticker Lab" decoding="async" src="img/project/stl.png">
+                        </div>
+                        <div class="project-detail">
+                            <h1>Sticker Lab</h1>
+                            <p>A place where I draw public signage.</p>
+                            <p>(Mostly Rapid transit related signage)</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://github.com/Kenny-Hui/sticker-lab"><img alt="Sources" src="img/contact/github.png"></a>
+                                    <a href="https://lx862.com/sticker-lab"><img alt="Website" src="img/external/internet.png"></a>
+                                </p>
                             </div>
-                            <div class="project-detail">
-                                <h1>LRT PIDS Simulator</h1>
-                                <p>A Hong Kong Light Rail Passenger Information Display System Simulator</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/HKTSS/nlrt-pids"><img alt="Sources" src="img/contact/github.png"></a>
-                                        <a target="_blank" href="https://hktss.github.io/nlrt-pids"><img alt="Website" src="img/external/internet.png"></a>
-                                    </p>
-                                </div>
+                        </div>
+                    </div>
+                    <!-- <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="LRT PIDS Simulator" decoding="async" src="img/project/nlrt.jpg">
+                        </div>
+                        <div class="project-detail">
+                            <h1>LRT PIDS Simulator</h1>
+                            <p>A Hong Kong Light Rail Passenger Information Display System Simulator</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://github.com/HKTSS/nlrt-pids"><img alt="Sources" src="img/contact/github.png"></a>
+                                    <a href="https://hktss.github.io/nlrt-pids"><img alt="Website" src="img/external/internet.png"></a>
+                                </p>
                             </div>
-                        </div> -->
-                        <div class="project">
-                            <div class="project-img">
-                                <img class="clickable" alt="obDRPC Image" decoding="async" src="img/project/obdrpc.jpg">
-                            </div>
-                            <div class="project-detail">
-                                <h1>obDRPC</h1>
-                                <p>Formally known as OpenBVE Discord RPC, this allows users to display their presence via a OpenBVE Train Plugin.</p>
-                                <div class="inline-icons">
-                                    <p>
-                                        <a target="_blank" href="https://github.com/Kenny-Hui/obDRPC"><img class="clickable" alt="Sources" src="img/contact/github.png"></a>
-                                    </p>
-                                </div>
+                        </div>
+                    </div> -->
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="clickable" alt="obDRPC Image" decoding="async" src="img/project/obdrpc.jpg">
+                        </div>
+                        <div class="project-detail">
+                            <h1>obDRPC</h1>
+                            <p>Formally known as OpenBVE Discord RPC, this allows users to display their presence via a OpenBVE Train Plugin.</p>
+                            <div class="inline-icons">
+                                <p>
+                                    <a href="https://github.com/Kenny-Hui/obDRPC"><img class="clickable" alt="Sources" src="img/contact/github.png"></a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Contacts -->
-            <div id="contacts" class="section center">
-                <h1 class="title">Find me on...</h1>
-                <div class="project-container">
-                    <div class="project-group">
-                        <div class="project center">
-                            <div class="project-img">
-                                <img class="clickable" alt="Fediverse" decoding="async" src="img/contact/fedi.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>Fediverse</h1>
-                                <p>Follow what am I up to!</p>
-                                <p><a rel="me" href="https://wetdry.world/@LX862" target="_blank">@LX862@wetdry.world</a></p>
-                                <p><a rel="me" href="https://lethallava.land/@lx862" target="_blank">@lx862@lethallava.land</a></p>
-                            </div>
+        </div>
+        <!-- Contacts -->
+        <div id="contacts" class="section center">
+            <h1 class="title">Find me on...</h1>
+            <div class="project-container">
+                <div class="project-group">
+                    <div class="project center">
+                        <div class="project-img">
+                            <img class="clickable" alt="Fediverse" decoding="async" src="img/contact/fedi.png">
                         </div>
-                        <div class="project center">
-                            <div class="project-img">
-                                <img class="clickable" alt="Email" decoding="async" src="img/contact/mail.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>Email</h1>
-                                <p>Most comfy if I don't know you</p>
-                                <p><a href="mailto:lx86@lx862.com">lx86@lx862.com</a></p>
-                            </div>
+                        <div class="project-detail">
+                            <h1>Fediverse</h1>
+                            <p>Follow what am I up to!</p>
+                            <p><a rel="me" href="https://wetdry.world/@LX862">@LX862@wetdry.world</a></p>
+                            <p><a rel="me" href="https://lethallava.land/@lx862">@lx862@lethallava.land</a></p>
                         </div>
                     </div>
-                    <div class="project-group">
-                        <div class="project center">
-                            <div class="project-img">
-                                <img class="clickable" alt="Telegram" decoding="async" src="img/contact/github.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>GitHub</h1>
-                                <p>Enqueries for all my open-source project.</p>
-                                <p><a href="//github.com/Kenny-Hui">github.com/Kenny-Hui</a></p>
-                            </div>
+                    <div class="project center">
+                        <div class="project-img">
+                            <img class="clickable" alt="Email" decoding="async" src="img/contact/mail.png">
                         </div>
-                        <div class="project center">
-                            <div class="project-img">
-                                <img class="clickable" alt="Revolt" decoding="async" src="img/contact/revolt.png">
-                            </div>
-                            <div class="project-detail">
-                                <h1>Revolt</h1>
-                                <p>Let's have a quick chat, or be friends :D</p>
-                                <p><b>LX86#3250</b></p>
-                            </div>
+                        <div class="project-detail">
+                            <h1>Email</h1>
+                            <p>Most comfy if I don't know you</p>
+                            <p><a href="mailto:lx86@lx862.com">lx86@lx862.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-group">
+                    <div class="project center">
+                        <div class="project-img">
+                            <img class="clickable" alt="Telegram" decoding="async" src="img/contact/github.png">
+                        </div>
+                        <div class="project-detail">
+                            <h1>GitHub</h1>
+                            <p>Enqueries for all my open-source project.</p>
+                            <p><a href="//github.com/Kenny-Hui">github.com/Kenny-Hui</a></p>
+                        </div>
+                    </div>
+                    <div class="project center">
+                        <div class="project-img">
+                            <img class="clickable" alt="Revolt" decoding="async" src="img/contact/revolt.png">
+                        </div>
+                        <div class="project-detail">
+                            <h1>Revolt</h1>
+                            <p>Let's have a quick chat, or be friends :D</p>
+                            <p><b>LX86#3250</b></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section center">
-                <h1 class="title">Credits</h1>
-                <div class="card-container">
-                    <a class="card" target="_blank" href="//volpeon.ink/projects/emojis/blobfox">
-                        <h2>Volpeon</h2>
-                        <p>Some blobfox emotes are used and shown on this page.<br>See if you can find it :)</p>
-                    </a>
-                    <a class="card" target="_blank" href="//int10h.org/oldschool-pc-fonts/">
-                        <h2>Oldschool PC Fonts</h2>
-                        <p>Provide classic BIOS/system fonts, used on the 404 page</p>
-                    </a>
-                    <a class="card" target="_blank" href="//freeplay.codeberg.page/">
-                        <h2 class="nowrap">Free<span class="hover-spoiler">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>play</h2>
-                        <p>Cool site, cool site. I ended up taking some inspiration to here :P, Also learnt some CSS tricks and a11y along the way.</p>
-                    </a>
-                    <a class="card" target="_blank" href="//pages.github.com">
-                        <h2>GitHub Pages</h2>
-                        <p>For hosting this page</p>
-                    </a>
-                </div>
+        </div>
+        <div class="section center">
+            <h1 class="title">Credits</h1>
+            <div class="card-container">
+                <a class="card" href="//volpeon.ink/projects/emojis/blobfox">
+                    <h2>Volpeon</h2>
+                    <p>Some blobfox emotes are used and shown on this page.<br>See if you can find it :)</p>
+                </a>
+                <a class="card" href="//int10h.org/oldschool-pc-fonts/">
+                    <h2>Oldschool PC Fonts</h2>
+                    <p>Provide classic BIOS/system fonts, used on the 404 page</p>
+                </a>
+                <a class="card" href="//freeplay.codeberg.page/">
+                    <h2 class="nowrap">Free<span class="hover-spoiler">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>play</h2>
+                    <p>Cool site, cool site. I ended up taking some inspiration to here :P, Also learnt some CSS tricks and a11y along the way.</p>
+                </a>
+                <a class="card" href="//pages.github.com">
+                    <h2>GitHub Pages</h2>
+                    <p>For hosting this page</p>
+                </a>
             </div>
-            <div class="section center">
-                <h1 class="title">Webrings</h1>
-                <div class="webring-container">
+        </div>
+        <div class="section center">
+            <h1 class="title">Webrings</h1>
+            <div class="webring-container">
+                <div class="webring">
                     <a href="https://fediring.net/previous?host=lx862.com" aria-label="Fediring: Previous Member" class="arrow left">&#8249;</a>
-                    <a class="card webring-card" aria-label="Fediring Homepage" target="_blank" href="https://fediring.net/">
+                    <a class="card webring-card" aria-label="Fediring Homepage" href="https://fediring.net/">
                         <h2>Fediring</h2>
                         <p>A webring for members with a Fediverse account</p>
                     </a>
                     <a href="https://fediring.net/next?host=lx862.com" aria-label="Fediring: Next Member" class="arrow right">&#8250;</a>
-                    <p><a class="random" href="https://fediring.net/random" aria-label="Fediring: Random" class="arrow right">Random</a></p>
                 </div>
-                <div class="webring-container">
+                <p><a class="random" href="https://fediring.net/random" aria-label="Fediring: Random" class="arrow right">Random</a></p>
+            </div>
+            <div class="webring-container">
+                <div class="webring">
                     <a href="https://webring.dinhe.net/prev/https://lx862.com" aria-label="Retronaut Webring: Previous Member" class="arrow left tooltip" data-tooltip="May contain unsolicited content, proceed with caution.">&#8249;</a>
-                    <a class="card webring-card" aria-label="Retronaut Webring Homepage" target="_blank" href="https://webring.dinhe.net/">
+                    <a class="card webring-card" aria-label="Retronaut Webring Homepage" href="https://webring.dinhe.net/">
                         <h2>Retronaut</h2>
                         <p>A webring. Explore other cool sites!</p>
                     </a>
                     <a href="https://webring.dinhe.net/next/https://lx862.com" aria-label="Retronaut Webring: Next Member" class="arrow right tooltip" data-tooltip="May contain unsolicited content, proceed with caution.">&#8250;</a>
-                    <p><a class="random" href="https://webring.dinhe.net/random" aria-label="Retronaut Webring: Random" class="arrow right">Random</a></p>
                 </div>
-                <div class="webring-container">
+                <p><a class="random" href="https://webring.dinhe.net/random" aria-label="Retronaut Webring: Random" class="arrow right">Random</a></p>
+            </div>
+            <div class="webring-container">
+                <div class="webring">
                     <a href="https://hotlinewebring.club/lx86/previous" aria-label="Hotline Webring: Previous Member" class="arrow left tooltip" data-tooltip="May contain unsolicited content, proceed with caution.">&#8249;</a>
-                    <a class="card webring-card" aria-label="Hotline Webring Homepage" target="_blank" href="https://hotlinewebring.club/">
+                    <a class="card webring-card" aria-label="Hotline Webring Homepage" href="https://hotlinewebring.club/">
                         <h2>Hotline</h2>
                         <p>A webring. Explore other cool personal site!</p>
                     </a>
                     <a href="https://hotlinewebring.club/lx86/next" aria-label="Hotline Webring: Next Member" class="arrow right tooltip" data-tooltip="May contain unsolicited content, proceed with caution.">&#8250;</a>
                 </div>
-
-                <footer>
-                    <div class="footer">
-                        <p>LX86 2024</p>
-                        <p><i>Be whatever you want to be</i></p>
-                        <br>
-                        <p><a alt="Source code of this page" href="https://github.com/Kenny-Hui/kenny-hui.github.io" target="_blank">The code of this page</a> are licensed under MIT<br>Other medium are licensed under CC BY 4.0</p>
-                    </div>
-                    <br>
-                    <a href="https://512kb.club" aria-label="512KB Club: Orange Team"><img src="img/512kb.png"></a>
-                    <br>
-                    <img alt="Viewable in any browser" src="img/8831/allbrowser.gif">
-                    <img alt="We do a little trolling" src="img/8831/wdalt.png">
-                    <img alt="W3C valid css" src="img/8831/valid-css.png">
-                    <img alt="Keep the web free, say no to Web3" src="img/8831/saynotoweb3.gif">
-                </footer>
             </div>
+
+            <footer>
+                <div class="footer">
+                    <p>LX86 2024</p>
+                    <p><i>Be whatever you want to be</i></p>
+                    <br>
+                    <p><a alt="Source code of this page" href="https://github.com/Kenny-Hui/kenny-hui.github.io">The code of this page</a> are licensed under MIT<br>Other medium are licensed under CC BY 4.0</p>
+                </div>
+                <br>
+                <a href="https://512kb.club" aria-label="512KB Club: Orange Team"><img src="img/512kb.png"></a>
+                <br>
+                <img alt="Viewable in any browser" src="img/8831/allbrowser.gif">
+                <img alt="We do a little trolling" src="img/8831/wdalt.png">
+                <img alt="W3C valid css" src="img/8831/valid-css.png">
+                <img alt="Keep the web free, say no to Web3" src="img/8831/saynotoweb3.gif">
+            </footer>
         </div>
     </main>
 </body>
