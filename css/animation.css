@@ -188,11 +188,11 @@
     }
 
     .tooltip:before {
-        transition: visibility 0.15s, opacity 0.15s, transform 0.15s;
+        transition: visibility 0.15s, font-size 0.15s, opacity 0.15s, transform 0.15s;
     }
 
     a.arrow {
-        transition: padding 0.2s;
+        transition: transform 0.2s;
     }
 
     a.card {

@@ -284,8 +284,10 @@ a.back-to-top {
 }
 
 .tooltip:hover:before, .tooltip:focus:before {
+    content: attr(data-tooltip);
     transform: translateX(-50%) translateY(0);
     opacity: 1;
+    font-size: 14px;
     visibility: visible;
 }
 
@@ -296,7 +298,7 @@ a.back-to-top {
     left: 50%;
     padding: 2px 4px;
     background: #222;
-    font-size: 14px;
+    font-size: 0px;
     white-space: nowrap;
     border-radius: 4px;
     transform: translateX(-50%) translateY(25%);
@@ -369,8 +371,7 @@ main {
 
 .project-img img {
     width: 148px;
-    border-radius: 25px;
-    border-radius: 1.25em;
+    border-radius: 1.2rem;
     margin-top: 0.5em;
     filter: drop-shadow(0 0 12px #000);
 }
@@ -492,7 +493,7 @@ a[href].webring-card {
 
 .inline-icons img {
     margin: 0 5px;
-    width: 48px;
+    width: 42px;
 }
 
 .section:before {
@@ -565,11 +566,11 @@ a[href].arrow, .arrow {
 }
 
 .arrow.left:hover {
-    padding-right: 5px;
+    transform: translateX(-4px);
 }
 
 .arrow.right:hover {
-    padding-left: 5px;
+    transform: translateX(4px);
 }
 
 @media screen and (max-width: 800px) {
