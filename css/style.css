@@ -314,18 +314,22 @@ main {
     margin: 0 auto;
 }
 
-.nav {
-    list-style-type: none;
+nav {
+    font-size: 1.25rem;
     padding: 28px;
-    font-size: 22px;
 }
 
-.nav * {
+.nav {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav > li {
     display: inline-block;
 }
 
 .navitem {
-    padding: 0.25em 0.75em;
+    padding: 0.25em 0.7em;
 }
 
 .navitem a {
