@@ -1,0 +1,11 @@
+.tag-af {
+  display: inline-block;
+  font-size: 1rem;
+  font-family: "National Park", "Quicksand", sans-serif;
+  padding: 0.3rem 0.75rem;
+  background: linear-gradient(to top, #ffce2d 0%, #ffec4c 100%);
+  border: 2px solid #df6db5;
+  color: #1A1A1A;
+  border-radius: 10rem;
+  font-weight: 500;
+}

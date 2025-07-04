@@ -16,6 +16,8 @@
    --purple-highlight: #800773;
    --purple: #606;
    --solid-bg-color: #363330;
+
+   color-scheme: dark;
 }
 
 .profile-detail::-webkit-scrollbar {
@@ -38,7 +40,7 @@
 
 html, body {
     font-family: 'Jost', 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
     color: var(--text-color);
 }
@@ -94,21 +96,19 @@ header {
     position: relative;
     display: inline-block;
     font-weight: 400;
-    margin: 0.25em 0;
-    font-size: 4.5em;
-    text-shadow: 0px 0px 8px var(--text-color);
+    margin: 0.25rem 0;
+    font-size: 4rem;
+    text-shadow: 0px 0px 0.5rem var(--text-color);
 }
 
 .logo > span {
     display: inline-block;
-    /* Put title word closer together */
-    margin: 0 -0.05rem;
 }
 
 .profile {
     display: inline-block;
-    border-radius: 1.25em;
-    padding: 1.25em;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
 }
 
 .profile:hover {
@@ -116,25 +116,28 @@ header {
 }
 
 .profile-img {
-    display: inline-block;
+    width: 22rem;
+    max-width: 100%;
+    border-radius: 1.25rem;
     vertical-align: top;
-    padding: 0.5em 1em;
-}
-
-.profile-img img {
-    width: 148px;
-    border-radius: 1.5rem;
-    filter: drop-shadow(0 0 1rem #000);
+    margin: 1rem;
+    /* filter: drop-shadow(0 0 1rem #000); */
 }
 
 .profile-wrapper {
     position: relative;
-    display: inline-block;
-    max-width: 40rem;
+    max-width: 38rem;
+}
+
+.profile table {
+    margin: auto;
+}
+
+.profile li {
+    text-align: left;
 }
 
 .profile-detail {
-    text-align: left;
     overflow: auto;
     width: 100%;
     height: 100%;
@@ -236,7 +239,7 @@ header {
     height: 1400px;
     background-color: white;
     border-radius: 50%;
-    filter: blur(100px);
+    filter: blur(90px);
 }
 
 .bgcircle:nth-child(1) {
@@ -283,14 +286,6 @@ a.back-to-top {
     position: relative;
 }
 
-.tooltip:hover:before, .tooltip:focus:before {
-    content: attr(data-tooltip);
-    transform: translateX(-50%) translateY(0);
-    opacity: 1;
-    font-size: 14px;
-    visibility: visible;
-}
-
 .tooltip:before {
     content: attr(data-tooltip);
     position: absolute;
@@ -298,18 +293,25 @@ a.back-to-top {
     left: 50%;
     padding: 2px 4px;
     background: #222;
-    font-size: 0px;
     white-space: nowrap;
     border-radius: 4px;
-    transform: translateX(-50%) translateY(25%);
+    font-size: 0.75rem;
+    transform: translateX(-50%) scale(0) translateY(25%);
     box-shadow: 0 0 6px 1px #000;
     opacity: 0;
     visibility: hidden;
     z-index: 1;
 }
 
+.tooltip:hover:before, .tooltip:focus:before {
+    content: attr(data-tooltip);
+    transform: translateX(-50%) scale(1) translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
 main {
-    font-size: 20px;
+    font-size: 1.115rem;
     width: 100%;
     margin: 0 auto;
 }
@@ -317,14 +319,18 @@ main {
 nav {
     font-size: 1.25rem;
     padding: 28px;
+
+    & a {
+        color: var(--text-color);
+    }
 }
 
-.nav {
+nav > ul {
     display: inline-block;
     list-style-type: none;
 }
 
-.nav > li {
+nav > ul > li {
     display: inline-block;
 }
 
@@ -332,14 +338,13 @@ nav {
     padding: 0.25em 0.7em;
 }
 
-.navitem a {
-    color: var(--text-color);
-}
-
 .project-container {
-    display: inline-block;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 66rem;
     max-width: 100%;
-    margin: 20px auto;
+    margin: 2rem auto;
     text-align: center;
 }
 
@@ -354,12 +359,11 @@ nav {
 }
 
 .project {
-    display: inline-block;
+    flex: 1;
+    flex-basis: 32rem;
     box-sizing: border-box;
-    vertical-align: top;
-    width: 600px;
     max-width: 100%;
-    border-radius: 20px;
+    border-radius: 1rem;
     padding: 10px 20px;
 }
 
@@ -500,7 +504,7 @@ a[href].webring-card {
     width: 42px;
 }
 
-.section:before {
+section:before {
     content: "";
     position: absolute;
     top: 0;
@@ -518,25 +522,25 @@ a[href].webring-card {
     z-index: -1;
 }
 
-.section:first-child::before {
+section:first-child::before {
     border-top: 3px solid #444;
 }
 
-.section:last-child:before {
+section:last-child:before {
     border-bottom: 3px solid #444;
 }
 
-.section {
+section {
     position: relative;
     scroll-margin-top: 6rem;
     width: 100%;
     padding: 70px 0;
     margin: auto;
-}
 
-.section .title {
-    font-weight: 600;
-    text-align: center;
+    & .title {
+        font-weight: 600;
+        text-align: center;
+    }
 }
 
 .hover-spoiler {
@@ -547,8 +551,13 @@ a[href].webring-card {
     line-height: 1rem;
 }
 
-.footer {
-    margin: 1em;
+footer {
+    margin: 3rem;
+    text-align: center;
+}
+
+footer .summary {
+    margin: 1rem;
 }
 
 .center {
